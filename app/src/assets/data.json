@@ -1,0 +1,3401 @@
+[
+    {
+        "code": "005",
+        "name": "Alajärvi",
+        "countByDrivingForce": {
+            "1": 3094,
+            "2": 1848,
+            "3": 173,
+            "4": 71,
+            "5": 7
+        }
+    },
+    {
+        "code": "009",
+        "name": "Alavieska",
+        "countByDrivingForce": {
+            "1": 704,
+            "2": 539,
+            "3": 59,
+            "4": 19,
+            "5": 1
+        }
+    },
+    {
+        "code": "010",
+        "name": "Alavus",
+        "countByDrivingForce": {
+            "1": 4112,
+            "2": 1816,
+            "3": 273,
+            "4": 75,
+            "5": 19
+        }
+    },
+    {
+        "code": "016",
+        "name": "Asikkala",
+        "countByDrivingForce": {
+            "1": 2884,
+            "2": 1141,
+            "3": 346,
+            "4": 99,
+            "5": 36
+        }
+    },
+    {
+        "code": "018",
+        "name": "Askola",
+        "countByDrivingForce": {
+            "1": 1749,
+            "2": 770,
+            "3": 262,
+            "4": 92,
+            "5": 24
+        }
+    },
+    {
+        "code": "019",
+        "name": "Aura",
+        "countByDrivingForce": {
+            "1": 1396,
+            "2": 679,
+            "3": 193,
+            "4": 67,
+            "5": 26
+        }
+    },
+    {
+        "code": "020",
+        "name": "Akaa",
+        "countByDrivingForce": {
+            "1": 5936,
+            "2": 2499,
+            "3": 670,
+            "4": 283,
+            "5": 79
+        }
+    },
+    {
+        "code": "035",
+        "name": "Brändö",
+        "countByDrivingForce": {
+            "1": 17,
+            "2": 12,
+            "3": 5,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "043",
+        "name": "Eckerö",
+        "countByDrivingForce": {
+            "1": 9,
+            "2": 1,
+            "4": 1,
+            "3": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "046",
+        "name": "Enonkoski",
+        "countByDrivingForce": {
+            "1": 497,
+            "2": 216,
+            "3": 38,
+            "4": 9,
+            "5": 2
+        }
+    },
+    {
+        "code": "047",
+        "name": "Enontekiö",
+        "countByDrivingForce": {
+            "1": 565,
+            "2": 330,
+            "3": 41,
+            "4": 9,
+            "5": 0
+        }
+    },
+    {
+        "code": "049",
+        "name": "Espoo",
+        "countByDrivingForce": {
+            "1": 65096,
+            "2": 20912,
+            "3": 22933,
+            "4": 10265,
+            "5": 1222
+        }
+    },
+    {
+        "code": "050",
+        "name": "Eura",
+        "countByDrivingForce": {
+            "1": 4424,
+            "2": 1821,
+            "3": 369,
+            "4": 109,
+            "5": 39
+        }
+    },
+    {
+        "code": "051",
+        "name": "Eurajoki",
+        "countByDrivingForce": {
+            "1": 3486,
+            "2": 1569,
+            "3": 373,
+            "4": 151,
+            "5": 31
+        }
+    },
+    {
+        "code": "052",
+        "name": "Evijärvi",
+        "countByDrivingForce": {
+            "1": 728,
+            "2": 546,
+            "3": 66,
+            "4": 19,
+            "5": 3
+        }
+    },
+    {
+        "code": "060",
+        "name": "Finström",
+        "countByDrivingForce": {
+            "1": 8,
+            "2": 3,
+            "3": 2,
+            "4": 1,
+            "5": 0
+        }
+    },
+    {
+        "code": "061",
+        "name": "Forssa",
+        "countByDrivingForce": {
+            "1": 6052,
+            "2": 1910,
+            "3": 689,
+            "4": 150,
+            "5": 82
+        }
+    },
+    {
+        "code": "062",
+        "name": "Föglö",
+        "countByDrivingForce": {
+            "1": 3,
+            "2": 2,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "065",
+        "name": "Geta",
+        "countByDrivingForce": {
+            "1": 4,
+            "4": 2,
+            "2": 0,
+            "3": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "069",
+        "name": "Haapajärvi",
+        "countByDrivingForce": {
+            "1": 1876,
+            "2": 1252,
+            "3": 164,
+            "4": 36,
+            "5": 9
+        }
+    },
+    {
+        "code": "071",
+        "name": "Haapavesi",
+        "countByDrivingForce": {
+            "1": 1708,
+            "2": 1313,
+            "3": 119,
+            "4": 35,
+            "5": 37
+        }
+    },
+    {
+        "code": "072",
+        "name": "Hailuoto",
+        "countByDrivingForce": {
+            "1": 303,
+            "2": 126,
+            "3": 33,
+            "4": 7,
+            "5": 3
+        }
+    },
+    {
+        "code": "074",
+        "name": "Halsua",
+        "countByDrivingForce": {
+            "1": 337,
+            "2": 240,
+            "3": 20,
+            "4": 8,
+            "5": 1
+        }
+    },
+    {
+        "code": "075",
+        "name": "Hamina",
+        "countByDrivingForce": {
+            "1": 8025,
+            "2": 2075,
+            "3": 930,
+            "4": 167,
+            "5": 89
+        }
+    },
+    {
+        "code": "076",
+        "name": "Hammarland",
+        "countByDrivingForce": {
+            "1": 11,
+            "2": 1,
+            "3": 2,
+            "4": 2,
+            "5": 0
+        }
+    },
+    {
+        "code": "077",
+        "name": "Hankasalmi",
+        "countByDrivingForce": {
+            "1": 1646,
+            "2": 760,
+            "3": 115,
+            "4": 29,
+            "5": 25
+        }
+    },
+    {
+        "code": "078",
+        "name": "Hanko",
+        "countByDrivingForce": {
+            "1": 2820,
+            "2": 686,
+            "3": 365,
+            "4": 99,
+            "5": 13
+        }
+    },
+    {
+        "code": "079",
+        "name": "Harjavalta",
+        "countByDrivingForce": {
+            "1": 2885,
+            "2": 852,
+            "3": 216,
+            "4": 41,
+            "5": 16
+        }
+    },
+    {
+        "code": "081",
+        "name": "Hartola",
+        "countByDrivingForce": {
+            "1": 930,
+            "2": 360,
+            "3": 71,
+            "4": 20,
+            "5": 4
+        }
+    },
+    {
+        "code": "082",
+        "name": "Hattula",
+        "countByDrivingForce": {
+            "1": 3519,
+            "2": 1409,
+            "3": 455,
+            "4": 136,
+            "5": 55
+        }
+    },
+    {
+        "code": "086",
+        "name": "Hausjärvi",
+        "countByDrivingForce": {
+            "1": 3066,
+            "2": 1132,
+            "3": 342,
+            "4": 128,
+            "5": 56
+        }
+    },
+    {
+        "code": "090",
+        "name": "Heinävesi",
+        "countByDrivingForce": {
+            "1": 1076,
+            "2": 482,
+            "3": 68,
+            "4": 13,
+            "5": 3
+        }
+    },
+    {
+        "code": "091",
+        "name": "Helsinki",
+        "countByDrivingForce": {
+            "1": 116546,
+            "2": 34298,
+            "3": 33471,
+            "4": 12675,
+            "5": 2273
+        }
+    },
+    {
+        "code": "092",
+        "name": "Vantaa",
+        "countByDrivingForce": {
+            "1": 58336,
+            "2": 19781,
+            "3": 20005,
+            "4": 6070,
+            "5": 875
+        }
+    },
+    {
+        "code": "097",
+        "name": "Hirvensalmi",
+        "countByDrivingForce": {
+            "1": 779,
+            "2": 324,
+            "3": 58,
+            "4": 15,
+            "5": 10
+        }
+    },
+    {
+        "code": "098",
+        "name": "Hollola",
+        "countByDrivingForce": {
+            "1": 7871,
+            "2": 2935,
+            "3": 1209,
+            "4": 317,
+            "5": 118
+        }
+    },
+    {
+        "code": "102",
+        "name": "Huittinen",
+        "countByDrivingForce": {
+            "1": 3649,
+            "2": 1678,
+            "3": 316,
+            "4": 107,
+            "5": 15
+        }
+    },
+    {
+        "code": "103",
+        "name": "Humppila",
+        "countByDrivingForce": {
+            "1": 780,
+            "2": 382,
+            "3": 77,
+            "4": 26,
+            "5": 8
+        }
+    },
+    {
+        "code": "105",
+        "name": "Hyrynsalmi",
+        "countByDrivingForce": {
+            "1": 712,
+            "2": 403,
+            "3": 51,
+            "4": 8,
+            "5": 1
+        }
+    },
+    {
+        "code": "106",
+        "name": "Hyvinkää",
+        "countByDrivingForce": {
+            "1": 14597,
+            "2": 4704,
+            "3": 2666,
+            "4": 927,
+            "5": 267
+        }
+    },
+    {
+        "code": "108",
+        "name": "Hämeenkyrö",
+        "countByDrivingForce": {
+            "1": 3668,
+            "2": 1736,
+            "3": 383,
+            "4": 135,
+            "5": 54
+        }
+    },
+    {
+        "code": "109",
+        "name": "Hämeenlinna",
+        "countByDrivingForce": {
+            "1": 22402,
+            "2": 7631,
+            "3": 3161,
+            "4": 998,
+            "5": 348
+        }
+    },
+    {
+        "code": "111",
+        "name": "Heinola",
+        "countByDrivingForce": {
+            "1": 6351,
+            "2": 2067,
+            "3": 688,
+            "4": 165,
+            "5": 47
+        }
+    },
+    {
+        "code": "139",
+        "name": "Ii",
+        "countByDrivingForce": {
+            "1": 2733,
+            "2": 1797,
+            "3": 267,
+            "4": 108,
+            "5": 25
+        }
+    },
+    {
+        "code": "140",
+        "name": "Iisalmi",
+        "countByDrivingForce": {
+            "1": 6968,
+            "2": 2899,
+            "3": 489,
+            "4": 149,
+            "5": 21
+        }
+    },
+    {
+        "code": "142",
+        "name": "Iitti",
+        "countByDrivingForce": {
+            "1": 2534,
+            "2": 881,
+            "3": 242,
+            "4": 68,
+            "5": 21
+        }
+    },
+    {
+        "code": "143",
+        "name": "Ikaalinen",
+        "countByDrivingForce": {
+            "1": 2244,
+            "2": 1185,
+            "3": 168,
+            "4": 62,
+            "5": 13
+        }
+    },
+    {
+        "code": "145",
+        "name": "Ilmajoki",
+        "countByDrivingForce": {
+            "1": 4465,
+            "2": 2302,
+            "3": 416,
+            "4": 147,
+            "5": 43
+        }
+    },
+    {
+        "code": "146",
+        "name": "Ilomantsi",
+        "countByDrivingForce": {
+            "1": 1737,
+            "2": 643,
+            "3": 85,
+            "4": 20,
+            "5": 4
+        }
+    },
+    {
+        "code": "148",
+        "name": "Inari",
+        "countByDrivingForce": {
+            "1": 2092,
+            "2": 1325,
+            "3": 186,
+            "4": 30,
+            "5": 9
+        }
+    },
+    {
+        "code": "149",
+        "name": "Ingå",
+        "countByDrivingForce": {
+            "1": 1824,
+            "2": 769,
+            "3": 363,
+            "4": 120,
+            "5": 30
+        }
+    },
+    {
+        "code": "151",
+        "name": "Isojoki",
+        "countByDrivingForce": {
+            "1": 701,
+            "2": 368,
+            "3": 46,
+            "4": 7,
+            "5": 2
+        }
+    },
+    {
+        "code": "152",
+        "name": "Isokyrö",
+        "countByDrivingForce": {
+            "1": 1813,
+            "2": 890,
+            "3": 195,
+            "4": 55,
+            "5": 34
+        }
+    },
+    {
+        "code": "153",
+        "name": "Imatra",
+        "countByDrivingForce": {
+            "1": 10498,
+            "2": 2170,
+            "3": 1157,
+            "4": 241,
+            "5": 192
+        }
+    },
+    {
+        "code": "165",
+        "name": "Janakkala",
+        "countByDrivingForce": {
+            "1": 6015,
+            "2": 2303,
+            "3": 750,
+            "4": 261,
+            "5": 77
+        }
+    },
+    {
+        "code": "167",
+        "name": "Joensuu",
+        "countByDrivingForce": {
+            "1": 24261,
+            "2": 7369,
+            "3": 2551,
+            "4": 749,
+            "5": 135
+        }
+    },
+    {
+        "code": "169",
+        "name": "Jokioinen",
+        "countByDrivingForce": {
+            "1": 1963,
+            "2": 790,
+            "3": 218,
+            "4": 58,
+            "5": 29
+        }
+    },
+    {
+        "code": "170",
+        "name": "Jomala",
+        "countByDrivingForce": {
+            "1": 33,
+            "2": 2,
+            "3": 14,
+            "4": 2,
+            "5": 0
+        }
+    },
+    {
+        "code": "171",
+        "name": "Joroinen",
+        "countByDrivingForce": {
+            "1": 1801,
+            "2": 721,
+            "3": 152,
+            "4": 46,
+            "5": 5
+        }
+    },
+    {
+        "code": "172",
+        "name": "Joutsa",
+        "countByDrivingForce": {
+            "1": 1465,
+            "2": 575,
+            "3": 132,
+            "4": 26,
+            "5": 20
+        }
+    },
+    {
+        "code": "176",
+        "name": "Juuka",
+        "countByDrivingForce": {
+            "1": 1567,
+            "2": 668,
+            "3": 94,
+            "4": 13,
+            "5": 2
+        }
+    },
+    {
+        "code": "177",
+        "name": "Juupajoki",
+        "countByDrivingForce": {
+            "1": 596,
+            "2": 345,
+            "3": 48,
+            "4": 21,
+            "5": 2
+        }
+    },
+    {
+        "code": "178",
+        "name": "Juva",
+        "countByDrivingForce": {
+            "1": 2136,
+            "2": 885,
+            "3": 179,
+            "4": 62,
+            "5": 14
+        }
+    },
+    {
+        "code": "179",
+        "name": "Jyväskylä",
+        "countByDrivingForce": {
+            "1": 39605,
+            "2": 14681,
+            "3": 6232,
+            "4": 1849,
+            "5": 1013
+        }
+    },
+    {
+        "code": "181",
+        "name": "Jämijärvi",
+        "countByDrivingForce": {
+            "1": 635,
+            "2": 368,
+            "3": 30,
+            "4": 14,
+            "5": 4
+        }
+    },
+    {
+        "code": "182",
+        "name": "Jämsä",
+        "countByDrivingForce": {
+            "1": 7652,
+            "2": 2522,
+            "3": 839,
+            "4": 151,
+            "5": 36
+        }
+    },
+    {
+        "code": "186",
+        "name": "Järvenpää",
+        "countByDrivingForce": {
+            "1": 12960,
+            "2": 4182,
+            "3": 3322,
+            "4": 902,
+            "5": 218
+        }
+    },
+    {
+        "code": "202",
+        "name": "Kaarina",
+        "countByDrivingForce": {
+            "1": 12117,
+            "2": 3435,
+            "3": 2830,
+            "4": 999,
+            "5": 123
+        }
+    },
+    {
+        "code": "204",
+        "name": "Kaavi",
+        "countByDrivingForce": {
+            "1": 941,
+            "2": 432,
+            "3": 62,
+            "4": 7,
+            "5": 3
+        }
+    },
+    {
+        "code": "205",
+        "name": "Kajaani",
+        "countByDrivingForce": {
+            "1": 11308,
+            "2": 4861,
+            "3": 1218,
+            "4": 277,
+            "5": 39
+        }
+    },
+    {
+        "code": "208",
+        "name": "Kalajoki",
+        "countByDrivingForce": {
+            "1": 3578,
+            "2": 2529,
+            "3": 307,
+            "4": 138,
+            "5": 14
+        }
+    },
+    {
+        "code": "211",
+        "name": "Kangasala",
+        "countByDrivingForce": {
+            "1": 10813,
+            "2": 4441,
+            "3": 1867,
+            "4": 658,
+            "5": 155
+        }
+    },
+    {
+        "code": "213",
+        "name": "Kangasniemi",
+        "countByDrivingForce": {
+            "1": 1869,
+            "2": 743,
+            "3": 148,
+            "4": 47,
+            "5": 16
+        }
+    },
+    {
+        "code": "214",
+        "name": "Kankaanpää",
+        "countByDrivingForce": {
+            "1": 4480,
+            "2": 1936,
+            "3": 382,
+            "4": 95,
+            "5": 25
+        }
+    },
+    {
+        "code": "216",
+        "name": "Kannonkoski",
+        "countByDrivingForce": {
+            "1": 410,
+            "2": 255,
+            "3": 35,
+            "4": 12,
+            "5": 0
+        }
+    },
+    {
+        "code": "217",
+        "name": "Kannus",
+        "countByDrivingForce": {
+            "1": 1479,
+            "2": 1101,
+            "3": 123,
+            "4": 35,
+            "5": 3
+        }
+    },
+    {
+        "code": "218",
+        "name": "Karijoki",
+        "countByDrivingForce": {
+            "1": 453,
+            "2": 241,
+            "3": 26,
+            "4": 7,
+            "5": 2
+        }
+    },
+    {
+        "code": "224",
+        "name": "Karkkila",
+        "countByDrivingForce": {
+            "1": 3084,
+            "2": 1050,
+            "3": 438,
+            "4": 145,
+            "5": 26
+        }
+    },
+    {
+        "code": "226",
+        "name": "Karstula",
+        "countByDrivingForce": {
+            "1": 1302,
+            "2": 717,
+            "3": 70,
+            "4": 14,
+            "5": 3
+        }
+    },
+    {
+        "code": "230",
+        "name": "Karvia",
+        "countByDrivingForce": {
+            "1": 852,
+            "2": 463,
+            "3": 56,
+            "4": 18,
+            "5": 2
+        }
+    },
+    {
+        "code": "231",
+        "name": "Kaskinen",
+        "countByDrivingForce": {
+            "1": 419,
+            "2": 197,
+            "3": 37,
+            "4": 14,
+            "5": 1
+        }
+    },
+    {
+        "code": "232",
+        "name": "Kauhajoki",
+        "countByDrivingForce": {
+            "1": 4589,
+            "2": 2358,
+            "3": 423,
+            "4": 80,
+            "5": 19
+        }
+    },
+    {
+        "code": "233",
+        "name": "Kauhava",
+        "countByDrivingForce": {
+            "1": 5631,
+            "2": 2810,
+            "3": 406,
+            "4": 106,
+            "5": 41
+        }
+    },
+    {
+        "code": "235",
+        "name": "Kauniainen",
+        "countByDrivingForce": {
+            "1": 2149,
+            "2": 769,
+            "3": 882,
+            "4": 542,
+            "5": 29
+        }
+    },
+    {
+        "code": "236",
+        "name": "Kaustinen",
+        "countByDrivingForce": {
+            "1": 1243,
+            "2": 932,
+            "3": 111,
+            "4": 47,
+            "5": 10
+        }
+    },
+    {
+        "code": "239",
+        "name": "Keitele",
+        "countByDrivingForce": {
+            "1": 723,
+            "2": 278,
+            "3": 56,
+            "4": 7,
+            "5": 7
+        }
+    },
+    {
+        "code": "240",
+        "name": "Kemi",
+        "countByDrivingForce": {
+            "1": 6439,
+            "2": 2035,
+            "3": 639,
+            "4": 143,
+            "5": 22
+        }
+    },
+    {
+        "code": "241",
+        "name": "Keminmaa",
+        "countByDrivingForce": {
+            "1": 2750,
+            "2": 1429,
+            "3": 314,
+            "4": 118,
+            "5": 7
+        }
+    },
+    {
+        "code": "244",
+        "name": "Kempele",
+        "countByDrivingForce": {
+            "1": 5525,
+            "2": 3071,
+            "3": 1003,
+            "4": 512,
+            "5": 79
+        }
+    },
+    {
+        "code": "245",
+        "name": "Kerava",
+        "countByDrivingForce": {
+            "1": 10056,
+            "2": 3186,
+            "3": 2190,
+            "4": 644,
+            "5": 152
+        }
+    },
+    {
+        "code": "249",
+        "name": "Keuruu",
+        "countByDrivingForce": {
+            "1": 3318,
+            "2": 1293,
+            "3": 298,
+            "4": 90,
+            "5": 19
+        }
+    },
+    {
+        "code": "250",
+        "name": "Kihniö",
+        "countByDrivingForce": {
+            "1": 617,
+            "2": 340,
+            "3": 39,
+            "4": 15,
+            "5": 3
+        }
+    },
+    {
+        "code": "256",
+        "name": "Kinnula",
+        "countByDrivingForce": {
+            "1": 495,
+            "2": 285,
+            "3": 32,
+            "4": 6,
+            "5": 0
+        }
+    },
+    {
+        "code": "257",
+        "name": "Kirkkonummi",
+        "countByDrivingForce": {
+            "1": 11152,
+            "2": 4237,
+            "3": 3140,
+            "4": 1496,
+            "5": 189
+        }
+    },
+    {
+        "code": "260",
+        "name": "Kitee",
+        "countByDrivingForce": {
+            "1": 3885,
+            "2": 1149,
+            "3": 243,
+            "4": 58,
+            "5": 46
+        }
+    },
+    {
+        "code": "261",
+        "name": "Kittilä",
+        "countByDrivingForce": {
+            "1": 2046,
+            "2": 1323,
+            "3": 233,
+            "4": 64,
+            "5": 3
+        }
+    },
+    {
+        "code": "263",
+        "name": "Kiuruvesi",
+        "countByDrivingForce": {
+            "1": 2230,
+            "2": 1446,
+            "3": 124,
+            "4": 32,
+            "5": 12
+        }
+    },
+    {
+        "code": "265",
+        "name": "Kivijärvi",
+        "countByDrivingForce": {
+            "1": 331,
+            "2": 220,
+            "3": 12,
+            "4": 4,
+            "5": 1
+        }
+    },
+    {
+        "code": "271",
+        "name": "Kokemäki",
+        "countByDrivingForce": {
+            "1": 2824,
+            "2": 1040,
+            "3": 212,
+            "4": 49,
+            "5": 7
+        }
+    },
+    {
+        "code": "272",
+        "name": "Kokkola",
+        "countByDrivingForce": {
+            "1": 14881,
+            "2": 7159,
+            "3": 1829,
+            "4": 519,
+            "5": 75
+        }
+    },
+    {
+        "code": "273",
+        "name": "Kolari",
+        "countByDrivingForce": {
+            "1": 1231,
+            "2": 787,
+            "3": 115,
+            "4": 40,
+            "5": 3
+        }
+    },
+    {
+        "code": "275",
+        "name": "Konnevesi",
+        "countByDrivingForce": {
+            "1": 867,
+            "2": 418,
+            "3": 84,
+            "4": 20,
+            "5": 7
+        }
+    },
+    {
+        "code": "276",
+        "name": "Kontiolahti",
+        "countByDrivingForce": {
+            "1": 5333,
+            "2": 2191,
+            "3": 558,
+            "4": 229,
+            "5": 51
+        }
+    },
+    {
+        "code": "280",
+        "name": "Korsnäs",
+        "countByDrivingForce": {
+            "1": 706,
+            "2": 428,
+            "3": 49,
+            "4": 22,
+            "5": 6
+        }
+    },
+    {
+        "code": "284",
+        "name": "Koski Tl",
+        "countByDrivingForce": {
+            "1": 818,
+            "2": 369,
+            "3": 78,
+            "4": 20,
+            "5": 5
+        }
+    },
+    {
+        "code": "285",
+        "name": "Kotka",
+        "countByDrivingForce": {
+            "1": 17653,
+            "2": 4268,
+            "3": 2534,
+            "4": 514,
+            "5": 169
+        }
+    },
+    {
+        "code": "286",
+        "name": "Kouvola",
+        "countByDrivingForce": {
+            "1": 32037,
+            "2": 8384,
+            "3": 3745,
+            "4": 698,
+            "5": 396
+        }
+    },
+    {
+        "code": "287",
+        "name": "Kristinestad",
+        "countByDrivingForce": {
+            "1": 2268,
+            "2": 1113,
+            "3": 196,
+            "4": 37,
+            "5": 13
+        }
+    },
+    {
+        "code": "288",
+        "name": "Kronoby",
+        "countByDrivingForce": {
+            "1": 2075,
+            "2": 1281,
+            "3": 243,
+            "4": 59,
+            "5": 23
+        }
+    },
+    {
+        "code": "290",
+        "name": "Kuhmo",
+        "countByDrivingForce": {
+            "1": 2865,
+            "2": 1067,
+            "3": 214,
+            "4": 12,
+            "5": 5
+        }
+    },
+    {
+        "code": "291",
+        "name": "Kuhmoinen",
+        "countByDrivingForce": {
+            "1": 781,
+            "2": 268,
+            "3": 78,
+            "4": 16,
+            "5": 9
+        }
+    },
+    {
+        "code": "295",
+        "name": "Kumlinge",
+        "countByDrivingForce": {
+            "1": 2,
+            "2": 1,
+            "3": 1,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "297",
+        "name": "Kuopio",
+        "countByDrivingForce": {
+            "1": 33584,
+            "2": 13841,
+            "3": 5234,
+            "4": 1807,
+            "5": 277
+        }
+    },
+    {
+        "code": "300",
+        "name": "Kuortane",
+        "countByDrivingForce": {
+            "1": 1220,
+            "2": 694,
+            "3": 111,
+            "4": 28,
+            "5": 13
+        }
+    },
+    {
+        "code": "301",
+        "name": "Kurikka",
+        "countByDrivingForce": {
+            "1": 7126,
+            "2": 3800,
+            "3": 646,
+            "4": 207,
+            "5": 56
+        }
+    },
+    {
+        "code": "304",
+        "name": "Kustavi",
+        "countByDrivingForce": {
+            "1": 323,
+            "2": 160,
+            "3": 56,
+            "4": 15,
+            "5": 2
+        }
+    },
+    {
+        "code": "305",
+        "name": "Kuusamo",
+        "countByDrivingForce": {
+            "1": 4983,
+            "2": 2343,
+            "3": 441,
+            "4": 74,
+            "5": 6
+        }
+    },
+    {
+        "code": "309",
+        "name": "Outokumpu",
+        "countByDrivingForce": {
+            "1": 2380,
+            "2": 790,
+            "3": 155,
+            "4": 41,
+            "5": 8
+        }
+    },
+    {
+        "code": "312",
+        "name": "Kyyjärvi",
+        "countByDrivingForce": {
+            "1": 372,
+            "2": 239,
+            "3": 30,
+            "4": 5,
+            "5": 2
+        }
+    },
+    {
+        "code": "316",
+        "name": "Kärkölä",
+        "countByDrivingForce": {
+            "1": 1556,
+            "2": 648,
+            "3": 168,
+            "4": 48,
+            "5": 26
+        }
+    },
+    {
+        "code": "317",
+        "name": "Kärsämäki",
+        "countByDrivingForce": {
+            "1": 682,
+            "2": 474,
+            "3": 42,
+            "4": 12,
+            "5": 4
+        }
+    },
+    {
+        "code": "318",
+        "name": "Kökar",
+        "countByDrivingForce": {
+            "1": 4,
+            "2": 1,
+            "3": 1,
+            "4": 2,
+            "5": 0
+        }
+    },
+    {
+        "code": "320",
+        "name": "Kemijärvi",
+        "countByDrivingForce": {
+            "1": 2519,
+            "2": 921,
+            "3": 271,
+            "4": 35,
+            "5": 8
+        }
+    },
+    {
+        "code": "322",
+        "name": "Kimitoön",
+        "countByDrivingForce": {
+            "1": 2415,
+            "2": 782,
+            "3": 284,
+            "4": 60,
+            "5": 26
+        }
+    },
+    {
+        "code": "398",
+        "name": "Lahti",
+        "countByDrivingForce": {
+            "1": 35543,
+            "2": 10994,
+            "3": 6065,
+            "4": 1666,
+            "5": 493
+        }
+    },
+    {
+        "code": "399",
+        "name": "Laihia",
+        "countByDrivingForce": {
+            "1": 2887,
+            "2": 1398,
+            "3": 293,
+            "4": 72,
+            "5": 39
+        }
+    },
+    {
+        "code": "400",
+        "name": "Laitila",
+        "countByDrivingForce": {
+            "1": 3114,
+            "2": 1309,
+            "3": 315,
+            "4": 83,
+            "5": 17
+        }
+    },
+    {
+        "code": "402",
+        "name": "Lapinlahti",
+        "countByDrivingForce": {
+            "1": 2917,
+            "2": 1692,
+            "3": 210,
+            "4": 76,
+            "5": 14
+        }
+    },
+    {
+        "code": "403",
+        "name": "Lappajärvi",
+        "countByDrivingForce": {
+            "1": 942,
+            "2": 505,
+            "3": 73,
+            "4": 20,
+            "5": 4
+        }
+    },
+    {
+        "code": "405",
+        "name": "Lappeenranta",
+        "countByDrivingForce": {
+            "1": 25595,
+            "2": 6050,
+            "3": 3556,
+            "4": 904,
+            "5": 555
+        }
+    },
+    {
+        "code": "407",
+        "name": "Lapinjärvi",
+        "countByDrivingForce": {
+            "1": 924,
+            "2": 406,
+            "3": 117,
+            "4": 20,
+            "5": 8
+        }
+    },
+    {
+        "code": "408",
+        "name": "Lapua",
+        "countByDrivingForce": {
+            "1": 5031,
+            "2": 2484,
+            "3": 479,
+            "4": 106,
+            "5": 28
+        }
+    },
+    {
+        "code": "410",
+        "name": "Laukaa",
+        "countByDrivingForce": {
+            "1": 5947,
+            "2": 2942,
+            "3": 632,
+            "4": 275,
+            "5": 173
+        }
+    },
+    {
+        "code": "416",
+        "name": "Lemi",
+        "countByDrivingForce": {
+            "1": 1195,
+            "2": 359,
+            "3": 122,
+            "4": 33,
+            "5": 24
+        }
+    },
+    {
+        "code": "417",
+        "name": "Lemland",
+        "countByDrivingForce": {
+            "1": 15,
+            "2": 2,
+            "3": 2,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "418",
+        "name": "Lempäälä",
+        "countByDrivingForce": {
+            "1": 7585,
+            "2": 3461,
+            "3": 1560,
+            "4": 772,
+            "5": 159
+        }
+    },
+    {
+        "code": "420",
+        "name": "Leppävirta",
+        "countByDrivingForce": {
+            "1": 3040,
+            "2": 1576,
+            "3": 298,
+            "4": 106,
+            "5": 10
+        }
+    },
+    {
+        "code": "421",
+        "name": "Lestijärvi",
+        "countByDrivingForce": {
+            "1": 172,
+            "2": 159,
+            "3": 18,
+            "4": 1,
+            "5": 0
+        }
+    },
+    {
+        "code": "422",
+        "name": "Lieksa",
+        "countByDrivingForce": {
+            "1": 3936,
+            "2": 1246,
+            "3": 201,
+            "4": 44,
+            "5": 11
+        }
+    },
+    {
+        "code": "423",
+        "name": "Lieto",
+        "countByDrivingForce": {
+            "1": 6975,
+            "2": 2440,
+            "3": 1575,
+            "4": 545,
+            "5": 90
+        }
+    },
+    {
+        "code": "425",
+        "name": "Liminka",
+        "countByDrivingForce": {
+            "1": 2282,
+            "2": 1873,
+            "3": 322,
+            "4": 228,
+            "5": 48
+        }
+    },
+    {
+        "code": "426",
+        "name": "Liperi",
+        "countByDrivingForce": {
+            "1": 4496,
+            "2": 1840,
+            "3": 339,
+            "4": 137,
+            "5": 26
+        }
+    },
+    {
+        "code": "430",
+        "name": "Loimaa",
+        "countByDrivingForce": {
+            "1": 5876,
+            "2": 2537,
+            "3": 609,
+            "4": 138,
+            "5": 53
+        }
+    },
+    {
+        "code": "433",
+        "name": "Loppi",
+        "countByDrivingForce": {
+            "1": 2905,
+            "2": 1308,
+            "3": 371,
+            "4": 123,
+            "5": 64
+        }
+    },
+    {
+        "code": "434",
+        "name": "Loviisa",
+        "countByDrivingForce": {
+            "1": 5343,
+            "2": 1902,
+            "3": 853,
+            "4": 236,
+            "5": 68
+        }
+    },
+    {
+        "code": "435",
+        "name": "Luhanka",
+        "countByDrivingForce": {
+            "1": 254,
+            "2": 148,
+            "3": 31,
+            "4": 8,
+            "5": 3
+        }
+    },
+    {
+        "code": "436",
+        "name": "Lumijoki",
+        "countByDrivingForce": {
+            "1": 442,
+            "2": 401,
+            "3": 38,
+            "4": 40,
+            "5": 6
+        }
+    },
+    {
+        "code": "438",
+        "name": "Lumparland",
+        "countByDrivingForce": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 0
+        }
+    },
+    {
+        "code": "440",
+        "name": "Larsmo",
+        "countByDrivingForce": {
+            "1": 1587,
+            "2": 1053,
+            "3": 188,
+            "4": 47,
+            "5": 29
+        }
+    },
+    {
+        "code": "441",
+        "name": "Luumäki",
+        "countByDrivingForce": {
+            "1": 1783,
+            "2": 546,
+            "3": 168,
+            "4": 43,
+            "5": 48
+        }
+    },
+    {
+        "code": "444",
+        "name": "Lohja",
+        "countByDrivingForce": {
+            "1": 15629,
+            "2": 5543,
+            "3": 2886,
+            "4": 1003,
+            "5": 416
+        }
+    },
+    {
+        "code": "445",
+        "name": "Pargas",
+        "countByDrivingForce": {
+            "1": 5561,
+            "2": 1575,
+            "3": 853,
+            "4": 226,
+            "5": 61
+        }
+    },
+    {
+        "code": "475",
+        "name": "Malax",
+        "countByDrivingForce": {
+            "1": 2118,
+            "2": 887,
+            "3": 159,
+            "4": 49,
+            "5": 33
+        }
+    },
+    {
+        "code": "478",
+        "name": "Mariehamn",
+        "countByDrivingForce": {
+            "1": 99,
+            "2": 37,
+            "3": 21,
+            "4": 8,
+            "5": 0
+        }
+    },
+    {
+        "code": "480",
+        "name": "Marttila",
+        "countByDrivingForce": {
+            "1": 713,
+            "2": 395,
+            "3": 62,
+            "4": 20,
+            "5": 5
+        }
+    },
+    {
+        "code": "481",
+        "name": "Masku",
+        "countByDrivingForce": {
+            "1": 3446,
+            "2": 1283,
+            "3": 770,
+            "4": 286,
+            "5": 37
+        }
+    },
+    {
+        "code": "483",
+        "name": "Merijärvi",
+        "countByDrivingForce": {
+            "1": 232,
+            "2": 244,
+            "3": 19,
+            "4": 6,
+            "5": 3
+        }
+    },
+    {
+        "code": "484",
+        "name": "Merikarvia",
+        "countByDrivingForce": {
+            "1": 941,
+            "2": 519,
+            "3": 60,
+            "4": 22,
+            "5": 6
+        }
+    },
+    {
+        "code": "489",
+        "name": "Miehikkälä",
+        "countByDrivingForce": {
+            "1": 814,
+            "2": 226,
+            "3": 65,
+            "4": 10,
+            "5": 4
+        }
+    },
+    {
+        "code": "491",
+        "name": "Mikkeli",
+        "countByDrivingForce": {
+            "1": 17854,
+            "2": 5684,
+            "3": 2101,
+            "4": 528,
+            "5": 255
+        }
+    },
+    {
+        "code": "494",
+        "name": "Muhos",
+        "countByDrivingForce": {
+            "1": 2401,
+            "2": 1654,
+            "3": 258,
+            "4": 119,
+            "5": 31
+        }
+    },
+    {
+        "code": "495",
+        "name": "Multia",
+        "countByDrivingForce": {
+            "1": 490,
+            "2": 252,
+            "3": 50,
+            "4": 9,
+            "5": 3
+        }
+    },
+    {
+        "code": "498",
+        "name": "Muonio",
+        "countByDrivingForce": {
+            "1": 737,
+            "2": 439,
+            "3": 62,
+            "4": 18,
+            "5": 2
+        }
+    },
+    {
+        "code": "499",
+        "name": "Korsholm",
+        "countByDrivingForce": {
+            "1": 7838,
+            "2": 2882,
+            "3": 703,
+            "4": 266,
+            "5": 217
+        }
+    },
+    {
+        "code": "500",
+        "name": "Muurame",
+        "countByDrivingForce": {
+            "1": 3238,
+            "2": 1437,
+            "3": 605,
+            "4": 271,
+            "5": 66
+        }
+    },
+    {
+        "code": "503",
+        "name": "Mynämäki",
+        "countByDrivingForce": {
+            "1": 3009,
+            "2": 1102,
+            "3": 366,
+            "4": 112,
+            "5": 25
+        }
+    },
+    {
+        "code": "504",
+        "name": "Myrskylä",
+        "countByDrivingForce": {
+            "1": 640,
+            "2": 310,
+            "3": 68,
+            "4": 22,
+            "5": 13
+        }
+    },
+    {
+        "code": "505",
+        "name": "Mäntsälä",
+        "countByDrivingForce": {
+            "1": 6685,
+            "2": 3194,
+            "3": 1130,
+            "4": 423,
+            "5": 189
+        }
+    },
+    {
+        "code": "507",
+        "name": "Mäntyharju",
+        "countByDrivingForce": {
+            "1": 2034,
+            "2": 831,
+            "3": 184,
+            "4": 28,
+            "5": 15
+        }
+    },
+    {
+        "code": "508",
+        "name": "Mänttä-Vilppula",
+        "countByDrivingForce": {
+            "1": 3607,
+            "2": 1220,
+            "3": 316,
+            "4": 54,
+            "5": 20
+        }
+    },
+    {
+        "code": "529",
+        "name": "Naantali",
+        "countByDrivingForce": {
+            "1": 6715,
+            "2": 2058,
+            "3": 1609,
+            "4": 570,
+            "5": 64
+        }
+    },
+    {
+        "code": "531",
+        "name": "Nakkila",
+        "countByDrivingForce": {
+            "1": 2143,
+            "2": 758,
+            "3": 167,
+            "4": 43,
+            "5": 19
+        }
+    },
+    {
+        "code": "535",
+        "name": "Nivala",
+        "countByDrivingForce": {
+            "1": 2946,
+            "2": 2123,
+            "3": 200,
+            "4": 89,
+            "5": 9
+        }
+    },
+    {
+        "code": "536",
+        "name": "Nokia",
+        "countByDrivingForce": {
+            "1": 11955,
+            "2": 4345,
+            "3": 1901,
+            "4": 700,
+            "5": 236
+        }
+    },
+    {
+        "code": "538",
+        "name": "Nousiainen",
+        "countByDrivingForce": {
+            "1": 1774,
+            "2": 745,
+            "3": 290,
+            "4": 83,
+            "5": 21
+        }
+    },
+    {
+        "code": "541",
+        "name": "Nurmes",
+        "countByDrivingForce": {
+            "1": 3233,
+            "2": 1354,
+            "3": 179,
+            "4": 51,
+            "5": 11
+        }
+    },
+    {
+        "code": "543",
+        "name": "Nurmijärvi",
+        "countByDrivingForce": {
+            "1": 14078,
+            "2": 5844,
+            "3": 3345,
+            "4": 1296,
+            "5": 180
+        }
+    },
+    {
+        "code": "545",
+        "name": "Närpes",
+        "countByDrivingForce": {
+            "1": 3517,
+            "2": 1704,
+            "3": 246,
+            "4": 61,
+            "5": 21
+        }
+    },
+    {
+        "code": "560",
+        "name": "Orimattila",
+        "countByDrivingForce": {
+            "1": 5855,
+            "2": 2417,
+            "3": 623,
+            "4": 199,
+            "5": 92
+        }
+    },
+    {
+        "code": "561",
+        "name": "Oripää",
+        "countByDrivingForce": {
+            "1": 479,
+            "2": 264,
+            "3": 46,
+            "4": 10,
+            "5": 2
+        }
+    },
+    {
+        "code": "562",
+        "name": "Orivesi",
+        "countByDrivingForce": {
+            "1": 3064,
+            "2": 1385,
+            "3": 371,
+            "4": 113,
+            "5": 24
+        }
+    },
+    {
+        "code": "563",
+        "name": "Oulainen",
+        "countByDrivingForce": {
+            "1": 1876,
+            "2": 1274,
+            "3": 117,
+            "4": 78,
+            "5": 12
+        }
+    },
+    {
+        "code": "564",
+        "name": "Oulu",
+        "countByDrivingForce": {
+            "1": 53889,
+            "2": 25279,
+            "3": 9490,
+            "4": 3503,
+            "5": 784
+        }
+    },
+    {
+        "code": "576",
+        "name": "Padasjoki",
+        "countByDrivingForce": {
+            "1": 1021,
+            "2": 399,
+            "3": 94,
+            "4": 26,
+            "5": 8
+        }
+    },
+    {
+        "code": "577",
+        "name": "Paimio",
+        "countByDrivingForce": {
+            "1": 3911,
+            "2": 1520,
+            "3": 883,
+            "4": 325,
+            "5": 65
+        }
+    },
+    {
+        "code": "578",
+        "name": "Paltamo",
+        "countByDrivingForce": {
+            "1": 1014,
+            "2": 521,
+            "3": 82,
+            "4": 19,
+            "5": 2
+        }
+    },
+    {
+        "code": "580",
+        "name": "Parikkala",
+        "countByDrivingForce": {
+            "1": 1786,
+            "2": 576,
+            "3": 119,
+            "4": 23,
+            "5": 35
+        }
+    },
+    {
+        "code": "581",
+        "name": "Parkano",
+        "countByDrivingForce": {
+            "1": 2274,
+            "2": 1096,
+            "3": 148,
+            "4": 32,
+            "5": 8
+        }
+    },
+    {
+        "code": "583",
+        "name": "Pelkosenniemi",
+        "countByDrivingForce": {
+            "1": 303,
+            "2": 144,
+            "3": 33,
+            "4": 3,
+            "5": 0
+        }
+    },
+    {
+        "code": "584",
+        "name": "Perho",
+        "countByDrivingForce": {
+            "1": 631,
+            "2": 599,
+            "3": 47,
+            "4": 14,
+            "5": 1
+        }
+    },
+    {
+        "code": "588",
+        "name": "Pertunmaa",
+        "countByDrivingForce": {
+            "1": 658,
+            "2": 255,
+            "3": 41,
+            "4": 7,
+            "5": 9
+        }
+    },
+    {
+        "code": "592",
+        "name": "Petäjävesi",
+        "countByDrivingForce": {
+            "1": 1175,
+            "2": 646,
+            "3": 121,
+            "4": 58,
+            "5": 20
+        }
+    },
+    {
+        "code": "593",
+        "name": "Pieksämäki",
+        "countByDrivingForce": {
+            "1": 6333,
+            "2": 2005,
+            "3": 688,
+            "4": 92,
+            "5": 21
+        }
+    },
+    {
+        "code": "595",
+        "name": "Pielavesi",
+        "countByDrivingForce": {
+            "1": 1381,
+            "2": 680,
+            "3": 87,
+            "4": 15,
+            "5": 4
+        }
+    },
+    {
+        "code": "598",
+        "name": "Jakobstad",
+        "countByDrivingForce": {
+            "1": 6873,
+            "2": 2125,
+            "3": 785,
+            "4": 189,
+            "5": 85
+        }
+    },
+    {
+        "code": "599",
+        "name": "Pedersöre",
+        "countByDrivingForce": {
+            "1": 3696,
+            "2": 2146,
+            "3": 367,
+            "4": 94,
+            "5": 72
+        }
+    },
+    {
+        "code": "601",
+        "name": "Pihtipudas",
+        "countByDrivingForce": {
+            "1": 1137,
+            "2": 664,
+            "3": 76,
+            "4": 17,
+            "5": 4
+        }
+    },
+    {
+        "code": "604",
+        "name": "Pirkkala",
+        "countByDrivingForce": {
+            "1": 6162,
+            "2": 2347,
+            "3": 1386,
+            "4": 614,
+            "5": 96
+        }
+    },
+    {
+        "code": "607",
+        "name": "Polvijärvi",
+        "countByDrivingForce": {
+            "1": 1551,
+            "2": 656,
+            "3": 84,
+            "4": 39,
+            "5": 5
+        }
+    },
+    {
+        "code": "608",
+        "name": "Pomarkku",
+        "countByDrivingForce": {
+            "1": 726,
+            "2": 346,
+            "3": 41,
+            "4": 14,
+            "5": 7
+        }
+    },
+    {
+        "code": "609",
+        "name": "Pori",
+        "countByDrivingForce": {
+            "1": 30079,
+            "2": 9184,
+            "3": 3425,
+            "4": 957,
+            "5": 249
+        }
+    },
+    {
+        "code": "611",
+        "name": "Pornainen",
+        "countByDrivingForce": {
+            "1": 1735,
+            "2": 770,
+            "3": 290,
+            "4": 117,
+            "5": 38
+        }
+    },
+    {
+        "code": "614",
+        "name": "Posio",
+        "countByDrivingForce": {
+            "1": 948,
+            "2": 520,
+            "3": 70,
+            "4": 6,
+            "5": 2
+        }
+    },
+    {
+        "code": "615",
+        "name": "Pudasjärvi",
+        "countByDrivingForce": {
+            "1": 2142,
+            "2": 1341,
+            "3": 131,
+            "4": 33,
+            "5": 6
+        }
+    },
+    {
+        "code": "616",
+        "name": "Pukkila",
+        "countByDrivingForce": {
+            "1": 609,
+            "2": 364,
+            "3": 69,
+            "4": 21,
+            "5": 8
+        }
+    },
+    {
+        "code": "619",
+        "name": "Punkalaidun",
+        "countByDrivingForce": {
+            "1": 1060,
+            "2": 464,
+            "3": 65,
+            "4": 23,
+            "5": 9
+        }
+    },
+    {
+        "code": "620",
+        "name": "Puolanka",
+        "countByDrivingForce": {
+            "1": 740,
+            "2": 393,
+            "3": 55,
+            "4": 4,
+            "5": 1
+        }
+    },
+    {
+        "code": "623",
+        "name": "Puumala",
+        "countByDrivingForce": {
+            "1": 727,
+            "2": 339,
+            "3": 89,
+            "4": 23,
+            "5": 8
+        }
+    },
+    {
+        "code": "624",
+        "name": "Pyhtää",
+        "countByDrivingForce": {
+            "1": 1948,
+            "2": 702,
+            "3": 284,
+            "4": 90,
+            "5": 27
+        }
+    },
+    {
+        "code": "625",
+        "name": "Pyhäjoki",
+        "countByDrivingForce": {
+            "1": 835,
+            "2": 639,
+            "3": 70,
+            "4": 34,
+            "5": 2
+        }
+    },
+    {
+        "code": "626",
+        "name": "Pyhäjärvi",
+        "countByDrivingForce": {
+            "1": 1517,
+            "2": 800,
+            "3": 93,
+            "4": 22,
+            "5": 17
+        }
+    },
+    {
+        "code": "630",
+        "name": "Pyhäntä",
+        "countByDrivingForce": {
+            "1": 377,
+            "2": 320,
+            "3": 24,
+            "4": 15,
+            "5": 2
+        }
+    },
+    {
+        "code": "631",
+        "name": "Pyhäranta",
+        "countByDrivingForce": {
+            "1": 814,
+            "2": 333,
+            "3": 65,
+            "4": 23,
+            "5": 3
+        }
+    },
+    {
+        "code": "635",
+        "name": "Pälkäne",
+        "countByDrivingForce": {
+            "1": 2313,
+            "2": 1105,
+            "3": 252,
+            "4": 85,
+            "5": 22
+        }
+    },
+    {
+        "code": "636",
+        "name": "Pöytyä",
+        "countByDrivingForce": {
+            "1": 2849,
+            "2": 1541,
+            "3": 290,
+            "4": 99,
+            "5": 25
+        }
+    },
+    {
+        "code": "638",
+        "name": "Porvoo",
+        "countByDrivingForce": {
+            "1": 16924,
+            "2": 5983,
+            "3": 3604,
+            "4": 1547,
+            "5": 325
+        }
+    },
+    {
+        "code": "678",
+        "name": "Raahe",
+        "countByDrivingForce": {
+            "1": 7222,
+            "2": 3778,
+            "3": 724,
+            "4": 186,
+            "5": 19
+        }
+    },
+    {
+        "code": "680",
+        "name": "Raisio",
+        "countByDrivingForce": {
+            "1": 9079,
+            "2": 2386,
+            "3": 2110,
+            "4": 525,
+            "5": 97
+        }
+    },
+    {
+        "code": "681",
+        "name": "Rantasalmi",
+        "countByDrivingForce": {
+            "1": 1257,
+            "2": 556,
+            "3": 84,
+            "4": 24,
+            "5": 6
+        }
+    },
+    {
+        "code": "683",
+        "name": "Ranua",
+        "countByDrivingForce": {
+            "1": 990,
+            "2": 728,
+            "3": 48,
+            "4": 9,
+            "5": 2
+        }
+    },
+    {
+        "code": "684",
+        "name": "Rauma",
+        "countByDrivingForce": {
+            "1": 14281,
+            "2": 4316,
+            "3": 1698,
+            "4": 519,
+            "5": 60
+        }
+    },
+    {
+        "code": "686",
+        "name": "Rautalampi",
+        "countByDrivingForce": {
+            "1": 1064,
+            "2": 472,
+            "3": 71,
+            "4": 10,
+            "5": 9
+        }
+    },
+    {
+        "code": "687",
+        "name": "Rautavaara",
+        "countByDrivingForce": {
+            "1": 512,
+            "2": 267,
+            "3": 29,
+            "4": 1,
+            "5": 2
+        }
+    },
+    {
+        "code": "689",
+        "name": "Rautjärvi",
+        "countByDrivingForce": {
+            "1": 1234,
+            "2": 360,
+            "3": 108,
+            "4": 23,
+            "5": 16
+        }
+    },
+    {
+        "code": "691",
+        "name": "Reisjärvi",
+        "countByDrivingForce": {
+            "1": 711,
+            "2": 562,
+            "3": 52,
+            "4": 15,
+            "5": 3
+        }
+    },
+    {
+        "code": "694",
+        "name": "Riihimäki",
+        "countByDrivingForce": {
+            "1": 9419,
+            "2": 2555,
+            "3": 1301,
+            "4": 365,
+            "5": 185
+        }
+    },
+    {
+        "code": "697",
+        "name": "Ristijärvi",
+        "countByDrivingForce": {
+            "1": 395,
+            "2": 254,
+            "3": 23,
+            "4": 2,
+            "5": 1
+        }
+    },
+    {
+        "code": "698",
+        "name": "Rovaniemi",
+        "countByDrivingForce": {
+            "1": 18984,
+            "2": 9097,
+            "3": 3159,
+            "4": 711,
+            "5": 60
+        }
+    },
+    {
+        "code": "700",
+        "name": "Ruokolahti",
+        "countByDrivingForce": {
+            "1": 1967,
+            "2": 622,
+            "3": 245,
+            "4": 48,
+            "5": 52
+        }
+    },
+    {
+        "code": "702",
+        "name": "Ruovesi",
+        "countByDrivingForce": {
+            "1": 1482,
+            "2": 654,
+            "3": 126,
+            "4": 25,
+            "5": 7
+        }
+    },
+    {
+        "code": "704",
+        "name": "Rusko",
+        "countByDrivingForce": {
+            "1": 2298,
+            "2": 775,
+            "3": 531,
+            "4": 165,
+            "5": 22
+        }
+    },
+    {
+        "code": "707",
+        "name": "Rääkkylä",
+        "countByDrivingForce": {
+            "1": 808,
+            "2": 288,
+            "3": 41,
+            "4": 17,
+            "5": 4
+        }
+    },
+    {
+        "code": "710",
+        "name": "Raseborg",
+        "countByDrivingForce": {
+            "1": 9949,
+            "2": 2879,
+            "3": 1488,
+            "4": 320,
+            "5": 51
+        }
+    },
+    {
+        "code": "729",
+        "name": "Saarijärvi",
+        "countByDrivingForce": {
+            "1": 3327,
+            "2": 1425,
+            "3": 201,
+            "4": 64,
+            "5": 24
+        }
+    },
+    {
+        "code": "732",
+        "name": "Salla",
+        "countByDrivingForce": {
+            "1": 1054,
+            "2": 511,
+            "3": 110,
+            "4": 10,
+            "5": 0
+        }
+    },
+    {
+        "code": "734",
+        "name": "Salo",
+        "countByDrivingForce": {
+            "1": 18456,
+            "2": 6484,
+            "3": 2949,
+            "4": 1000,
+            "5": 235
+        }
+    },
+    {
+        "code": "736",
+        "name": "Saltvik",
+        "countByDrivingForce": {
+            "1": 6,
+            "2": 3,
+            "3": 1,
+            "4": 1,
+            "5": 0
+        }
+    },
+    {
+        "code": "738",
+        "name": "Sauvo",
+        "countByDrivingForce": {
+            "1": 1038,
+            "2": 476,
+            "3": 147,
+            "4": 75,
+            "5": 19
+        }
+    },
+    {
+        "code": "739",
+        "name": "Savitaipale",
+        "countByDrivingForce": {
+            "1": 1283,
+            "2": 427,
+            "3": 107,
+            "4": 21,
+            "5": 10
+        }
+    },
+    {
+        "code": "740",
+        "name": "Savonlinna",
+        "countByDrivingForce": {
+            "1": 11644,
+            "2": 3439,
+            "3": 1201,
+            "4": 233,
+            "5": 60
+        }
+    },
+    {
+        "code": "742",
+        "name": "Savukoski",
+        "countByDrivingForce": {
+            "1": 267,
+            "2": 167,
+            "3": 29,
+            "4": 3,
+            "5": 0
+        }
+    },
+    {
+        "code": "743",
+        "name": "Seinäjoki",
+        "countByDrivingForce": {
+            "1": 24007,
+            "2": 9459,
+            "3": 2931,
+            "4": 1056,
+            "5": 220
+        }
+    },
+    {
+        "code": "746",
+        "name": "Sievi",
+        "countByDrivingForce": {
+            "1": 1119,
+            "2": 1045,
+            "3": 74,
+            "4": 40,
+            "5": 3
+        }
+    },
+    {
+        "code": "747",
+        "name": "Siikainen",
+        "countByDrivingForce": {
+            "1": 533,
+            "2": 190,
+            "3": 37,
+            "4": 11,
+            "5": 3
+        }
+    },
+    {
+        "code": "748",
+        "name": "Siikajoki",
+        "countByDrivingForce": {
+            "1": 1236,
+            "2": 1087,
+            "3": 100,
+            "4": 53,
+            "5": 6
+        }
+    },
+    {
+        "code": "749",
+        "name": "Siilinjärvi",
+        "countByDrivingForce": {
+            "1": 6241,
+            "2": 3572,
+            "3": 853,
+            "4": 325,
+            "5": 38
+        }
+    },
+    {
+        "code": "751",
+        "name": "Simo",
+        "countByDrivingForce": {
+            "1": 916,
+            "2": 579,
+            "3": 83,
+            "4": 21,
+            "5": 3
+        }
+    },
+    {
+        "code": "753",
+        "name": "Sipoo",
+        "countByDrivingForce": {
+            "1": 7178,
+            "2": 2736,
+            "3": 1704,
+            "4": 749,
+            "5": 138
+        }
+    },
+    {
+        "code": "755",
+        "name": "Siuntio",
+        "countByDrivingForce": {
+            "1": 1972,
+            "2": 796,
+            "3": 483,
+            "4": 235,
+            "5": 39
+        }
+    },
+    {
+        "code": "758",
+        "name": "Sodankylä",
+        "countByDrivingForce": {
+            "1": 2480,
+            "2": 1232,
+            "3": 385,
+            "4": 50,
+            "5": 3
+        }
+    },
+    {
+        "code": "759",
+        "name": "Soini",
+        "countByDrivingForce": {
+            "1": 580,
+            "2": 356,
+            "3": 49,
+            "4": 8,
+            "5": 0
+        }
+    },
+    {
+        "code": "761",
+        "name": "Somero",
+        "countByDrivingForce": {
+            "1": 3118,
+            "2": 1471,
+            "3": 326,
+            "4": 103,
+            "5": 32
+        }
+    },
+    {
+        "code": "762",
+        "name": "Sonkajärvi",
+        "countByDrivingForce": {
+            "1": 1271,
+            "2": 697,
+            "3": 57,
+            "4": 19,
+            "5": 4
+        }
+    },
+    {
+        "code": "765",
+        "name": "Sotkamo",
+        "countByDrivingForce": {
+            "1": 3238,
+            "2": 1891,
+            "3": 319,
+            "4": 93,
+            "5": 6
+        }
+    },
+    {
+        "code": "766",
+        "name": "Sottunga",
+        "countByDrivingForce": {
+            "1": 3,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "768",
+        "name": "Sulkava",
+        "countByDrivingForce": {
+            "1": 883,
+            "2": 377,
+            "3": 66,
+            "4": 13,
+            "5": 4
+        }
+    },
+    {
+        "code": "771",
+        "name": "Sund",
+        "countByDrivingForce": {
+            "1": 5,
+            "2": 4,
+            "3": 1,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "777",
+        "name": "Suomussalmi",
+        "countByDrivingForce": {
+            "1": 2579,
+            "2": 1147,
+            "3": 135,
+            "4": 15,
+            "5": 7
+        }
+    },
+    {
+        "code": "778",
+        "name": "Suonenjoki",
+        "countByDrivingForce": {
+            "1": 2286,
+            "2": 962,
+            "3": 159,
+            "4": 53,
+            "5": 10
+        }
+    },
+    {
+        "code": "781",
+        "name": "Sysmä",
+        "countByDrivingForce": {
+            "1": 1308,
+            "2": 466,
+            "3": 133,
+            "4": 32,
+            "5": 6
+        }
+    },
+    {
+        "code": "783",
+        "name": "Säkylä",
+        "countByDrivingForce": {
+            "1": 2561,
+            "2": 1206,
+            "3": 223,
+            "4": 55,
+            "5": 35
+        }
+    },
+    {
+        "code": "785",
+        "name": "Vaala",
+        "countByDrivingForce": {
+            "1": 848,
+            "2": 463,
+            "3": 61,
+            "4": 16,
+            "5": 3
+        }
+    },
+    {
+        "code": "790",
+        "name": "Sastamala",
+        "countByDrivingForce": {
+            "1": 9278,
+            "2": 3798,
+            "3": 775,
+            "4": 275,
+            "5": 60
+        }
+    },
+    {
+        "code": "791",
+        "name": "Siikalatva",
+        "countByDrivingForce": {
+            "1": 1385,
+            "2": 1071,
+            "3": 105,
+            "4": 29,
+            "5": 7
+        }
+    },
+    {
+        "code": "831",
+        "name": "Taipalsaari",
+        "countByDrivingForce": {
+            "1": 1798,
+            "2": 570,
+            "3": 254,
+            "4": 75,
+            "5": 32
+        }
+    },
+    {
+        "code": "832",
+        "name": "Taivalkoski",
+        "countByDrivingForce": {
+            "1": 1141,
+            "2": 631,
+            "3": 62,
+            "4": 10,
+            "5": 1
+        }
+    },
+    {
+        "code": "833",
+        "name": "Taivassalo",
+        "countByDrivingForce": {
+            "1": 626,
+            "2": 259,
+            "3": 66,
+            "4": 32,
+            "5": 7
+        }
+    },
+    {
+        "code": "834",
+        "name": "Tammela",
+        "countByDrivingForce": {
+            "1": 2276,
+            "2": 963,
+            "3": 275,
+            "4": 54,
+            "5": 37
+        }
+    },
+    {
+        "code": "837",
+        "name": "Tampere",
+        "countByDrivingForce": {
+            "1": 59338,
+            "2": 19422,
+            "3": 12226,
+            "4": 3881,
+            "5": 1021
+        }
+    },
+    {
+        "code": "844",
+        "name": "Tervo",
+        "countByDrivingForce": {
+            "1": 552,
+            "2": 225,
+            "3": 34,
+            "4": 6,
+            "5": 1
+        }
+    },
+    {
+        "code": "845",
+        "name": "Tervola",
+        "countByDrivingForce": {
+            "1": 843,
+            "2": 593,
+            "3": 68,
+            "4": 21,
+            "5": 4
+        }
+    },
+    {
+        "code": "846",
+        "name": "Teuva",
+        "countByDrivingForce": {
+            "1": 1672,
+            "2": 885,
+            "3": 159,
+            "4": 30,
+            "5": 4
+        }
+    },
+    {
+        "code": "848",
+        "name": "Tohmajärvi",
+        "countByDrivingForce": {
+            "1": 1667,
+            "2": 544,
+            "3": 109,
+            "4": 30,
+            "5": 10
+        }
+    },
+    {
+        "code": "849",
+        "name": "Toholampi",
+        "countByDrivingForce": {
+            "1": 708,
+            "2": 682,
+            "3": 53,
+            "4": 18,
+            "5": 11
+        }
+    },
+    {
+        "code": "850",
+        "name": "Toivakka",
+        "countByDrivingForce": {
+            "1": 784,
+            "2": 381,
+            "3": 69,
+            "4": 45,
+            "5": 26
+        }
+    },
+    {
+        "code": "851",
+        "name": "Tornio",
+        "countByDrivingForce": {
+            "1": 6203,
+            "2": 3440,
+            "3": 738,
+            "4": 221,
+            "5": 11
+        }
+    },
+    {
+        "code": "853",
+        "name": "Turku",
+        "countByDrivingForce": {
+            "1": 51747,
+            "2": 13421,
+            "3": 10479,
+            "4": 2937,
+            "5": 574
+        }
+    },
+    {
+        "code": "854",
+        "name": "Pello",
+        "countByDrivingForce": {
+            "1": 1034,
+            "2": 638,
+            "3": 78,
+            "4": 13,
+            "5": 6
+        }
+    },
+    {
+        "code": "857",
+        "name": "Tuusniemi",
+        "countByDrivingForce": {
+            "1": 848,
+            "2": 438,
+            "3": 44,
+            "4": 9,
+            "5": 3
+        }
+    },
+    {
+        "code": "858",
+        "name": "Tuusula",
+        "countByDrivingForce": {
+            "1": 13564,
+            "2": 5175,
+            "3": 3198,
+            "4": 1148,
+            "5": 237
+        }
+    },
+    {
+        "code": "859",
+        "name": "Tyrnävä",
+        "countByDrivingForce": {
+            "1": 1543,
+            "2": 1263,
+            "3": 143,
+            "4": 99,
+            "5": 25
+        }
+    },
+    {
+        "code": "886",
+        "name": "Ulvila",
+        "countByDrivingForce": {
+            "1": 5058,
+            "2": 1735,
+            "3": 482,
+            "4": 136,
+            "5": 38
+        }
+    },
+    {
+        "code": "887",
+        "name": "Urjala",
+        "countByDrivingForce": {
+            "1": 1729,
+            "2": 813,
+            "3": 150,
+            "4": 42,
+            "5": 20
+        }
+    },
+    {
+        "code": "889",
+        "name": "Utajärvi",
+        "countByDrivingForce": {
+            "1": 757,
+            "2": 501,
+            "3": 55,
+            "4": 15,
+            "5": 3
+        }
+    },
+    {
+        "code": "890",
+        "name": "Utsjoki",
+        "countByDrivingForce": {
+            "1": 291,
+            "2": 253,
+            "3": 25,
+            "4": 7,
+            "5": 0
+        }
+    },
+    {
+        "code": "892",
+        "name": "Uurainen",
+        "countByDrivingForce": {
+            "1": 1136,
+            "2": 677,
+            "3": 105,
+            "4": 40,
+            "5": 17
+        }
+    },
+    {
+        "code": "893",
+        "name": "Nykarleby",
+        "countByDrivingForce": {
+            "1": 2479,
+            "2": 1397,
+            "3": 234,
+            "4": 64,
+            "5": 97
+        }
+    },
+    {
+        "code": "895",
+        "name": "Uusikaupunki",
+        "countByDrivingForce": {
+            "1": 5822,
+            "2": 1769,
+            "3": 511,
+            "4": 142,
+            "5": 21
+        }
+    },
+    {
+        "code": "905",
+        "name": "Vaasa",
+        "countByDrivingForce": {
+            "1": 22778,
+            "2": 6457,
+            "3": 2584,
+            "4": 811,
+            "5": 335
+        }
+    },
+    {
+        "code": "908",
+        "name": "Valkeakoski",
+        "countByDrivingForce": {
+            "1": 7185,
+            "2": 2528,
+            "3": 955,
+            "4": 282,
+            "5": 63
+        }
+    },
+    {
+        "code": "915",
+        "name": "Varkaus",
+        "countByDrivingForce": {
+            "1": 7372,
+            "2": 2263,
+            "3": 815,
+            "4": 145,
+            "5": 22
+        }
+    },
+    {
+        "code": "918",
+        "name": "Vehmaa",
+        "countByDrivingForce": {
+            "1": 882,
+            "2": 369,
+            "3": 81,
+            "4": 22,
+            "5": 10
+        }
+    },
+    {
+        "code": "921",
+        "name": "Vesanto",
+        "countByDrivingForce": {
+            "1": 733,
+            "2": 298,
+            "3": 42,
+            "4": 7,
+            "5": 2
+        }
+    },
+    {
+        "code": "922",
+        "name": "Vesilahti",
+        "countByDrivingForce": {
+            "1": 1446,
+            "2": 802,
+            "3": 204,
+            "4": 125,
+            "5": 31
+        }
+    },
+    {
+        "code": "924",
+        "name": "Veteli",
+        "countByDrivingForce": {
+            "1": 891,
+            "2": 717,
+            "3": 79,
+            "4": 18,
+            "5": 1
+        }
+    },
+    {
+        "code": "925",
+        "name": "Vieremä",
+        "countByDrivingForce": {
+            "1": 1045,
+            "2": 594,
+            "3": 62,
+            "4": 14,
+            "5": 7
+        }
+    },
+    {
+        "code": "927",
+        "name": "Vihti",
+        "countByDrivingForce": {
+            "1": 9288,
+            "2": 4071,
+            "3": 1890,
+            "4": 787,
+            "5": 171
+        }
+    },
+    {
+        "code": "931",
+        "name": "Viitasaari",
+        "countByDrivingForce": {
+            "1": 1952,
+            "2": 863,
+            "3": 266,
+            "4": 42,
+            "5": 8
+        }
+    },
+    {
+        "code": "934",
+        "name": "Vimpeli",
+        "countByDrivingForce": {
+            "1": 968,
+            "2": 545,
+            "3": 68,
+            "4": 40,
+            "5": 6
+        }
+    },
+    {
+        "code": "935",
+        "name": "Virolahti",
+        "countByDrivingForce": {
+            "1": 1266,
+            "2": 376,
+            "3": 133,
+            "4": 22,
+            "5": 15
+        }
+    },
+    {
+        "code": "936",
+        "name": "Virrat",
+        "countByDrivingForce": {
+            "1": 2319,
+            "2": 970,
+            "3": 199,
+            "4": 44,
+            "5": 11
+        }
+    },
+    {
+        "code": "941",
+        "name": "Vårdö",
+        "countByDrivingForce": {
+            "1": 4,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0
+        }
+    },
+    {
+        "code": "946",
+        "name": "Vörå",
+        "countByDrivingForce": {
+            "1": 2213,
+            "2": 1118,
+            "3": 173,
+            "4": 83,
+            "5": 129
+        }
+    },
+    {
+        "code": "976",
+        "name": "Ylitornio",
+        "countByDrivingForce": {
+            "1": 1157,
+            "2": 750,
+            "3": 77,
+            "4": 21,
+            "5": 2
+        }
+    },
+    {
+        "code": "977",
+        "name": "Ylivieska",
+        "countByDrivingForce": {
+            "1": 4515,
+            "2": 2923,
+            "3": 469,
+            "4": 176,
+            "5": 26
+        }
+    },
+    {
+        "code": "980",
+        "name": "Ylöjärvi",
+        "countByDrivingForce": {
+            "1": 10618,
+            "2": 4970,
+            "3": 1774,
+            "4": 707,
+            "5": 154
+        }
+    },
+    {
+        "code": "981",
+        "name": "Ypäjä",
+        "countByDrivingForce": {
+            "1": 872,
+            "2": 391,
+            "3": 75,
+            "4": 23,
+            "5": 8
+        }
+    },
+    {
+        "code": "989",
+        "name": "Ähtäri",
+        "countByDrivingForce": {
+            "1": 1901,
+            "2": 931,
+            "3": 211,
+            "4": 35,
+            "5": 7
+        }
+    },
+    {
+        "code": "992",
+        "name": "Äänekoski",
+        "countByDrivingForce": {
+            "1": 6303,
+            "2": 2565,
+            "3": 597,
+            "4": 134,
+            "5": 55
+        }
+    }
+]
