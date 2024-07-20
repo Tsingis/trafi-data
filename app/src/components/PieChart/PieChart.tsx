@@ -17,14 +17,12 @@ type PieChartProps = {
   data: { [key: string]: number }
   labelMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
-  title?: string
 }
 
 const PieChart: React.FC<PieChartProps> = ({
   data,
   labelMap = {},
   colorMap = {},
-  title = "",
 }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null)
   const chartInstanceRef = useRef<ChartJS<"pie"> | null>(null)
@@ -41,8 +39,7 @@ const PieChart: React.FC<PieChartProps> = ({
         const values = Object.values(data)
         const total = values.reduce((sum, value) => sum + value, 0)
 
-        // Determine colors
-        const defaultColor = "rgba(0, 123, 255, 0.6)" // Default color if no colorMap is provided
+        const defaultColor = "rgba(0, 123, 255, 0.6)"
         const backgroundColors = Object.keys(data).map(
           (key) => colorMap[key] || defaultColor,
         )
@@ -51,7 +48,6 @@ const PieChart: React.FC<PieChartProps> = ({
           labels,
           datasets: [
             {
-              label: title,
               data: values,
               backgroundColor: backgroundColors,
               borderColor: "rgba(0, 0, 0, 0.1)",
@@ -92,7 +88,7 @@ const PieChart: React.FC<PieChartProps> = ({
         chartInstanceRef.current.destroy()
       }
     }
-  }, [data, labelMap, colorMap, title])
+  }, [data, labelMap, colorMap])
 
   return (
     <div className="piechart-container">

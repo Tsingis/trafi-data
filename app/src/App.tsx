@@ -5,7 +5,7 @@ import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdo
 import "./app.css"
 import PieChart from "./components/PieChart/PieChart"
 
-type DrivingForce = {
+type DrivingForceMapping = {
   [key: string]: string
 }
 
@@ -19,7 +19,7 @@ type Municipality = {
   countByDrivingForce: DrivingForceCount
 }
 
-const drivingForces: DrivingForce = {
+const drivingForces: DrivingForceMapping = {
   "1": "Petrol",
   "2": "Diesel",
   "3": "Hybrid",
@@ -27,7 +27,7 @@ const drivingForces: DrivingForce = {
   "5": "Other",
 }
 
-const drivingForcesColors: DrivingForce = {
+const drivingForcesColors: DrivingForceMapping = {
   "1": "rgba(0, 123, 255, 0.6)",
   "2": "rgba(220, 53, 69, 0.6)",
   "3": "rgba(255, 193, 7, 0.6)",
@@ -86,6 +86,7 @@ function App() {
           <BarChart
             data={selectedMunicipalityData}
             xAxisLabelMap={drivingForces}
+            colorMap={drivingForcesColors}
           />
           <PieChart
             data={selectedMunicipalityData}
