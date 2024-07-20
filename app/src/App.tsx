@@ -3,6 +3,7 @@ import data from "./assets/data.json"
 import BarChart from "./components/BarChart/BarChart"
 import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdown"
 import "./app.css"
+import PieChart from "./components/PieChart/PieChart"
 
 type DrivingForce = {
   [key: string]: string
@@ -24,6 +25,14 @@ const drivingForces: DrivingForce = {
   "3": "Hybrid",
   "4": "Electricity",
   "5": "Other",
+}
+
+const drivingForcesColors: DrivingForce = {
+  "1": "rgba(0, 123, 255, 0.6)",
+  "2": "rgba(220, 53, 69, 0.6)",
+  "3": "rgba(255, 193, 7, 0.6)",
+  "4": "rgba(40, 167, 69, 0.6)",
+  "5": "rgba(108, 117, 125, 0.6)",
 }
 
 const municipalities: Municipality[] = data
@@ -78,6 +87,11 @@ function App() {
             data={selectedMunicipalityData}
             xAxisLabelMap={drivingForces}
           />
+          <PieChart
+            data={selectedMunicipalityData}
+            labelMap={drivingForces}
+            colorMap={drivingForcesColors}
+          ></PieChart>
         </div>
       )}
     </div>
