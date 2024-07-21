@@ -4,10 +4,11 @@ on:
     branches:
       - main
     paths:
-      - "**"
-      - "!README.md"
-      - "!.gitignore"
-      - "!.github/**"
+      - "app/**"
+      - "tests/**"
+      - "config/**"
+      - "package*.json"
+      - "index.html"
       - ".github/workflows/test.yaml"
   workflow_dispatch:
 jobs:
