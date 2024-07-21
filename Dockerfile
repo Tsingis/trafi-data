@@ -2,7 +2,10 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
-COPY /app ./
+COPY src ./src
+COPY config ./config
+COPY index.html ./
+COPY package*.json ./
 
 RUN npm ci
 

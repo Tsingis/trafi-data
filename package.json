@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --open",
-    "build": "tsc -b && vite build"
+    "dev": "vite --config ./config/vite.config.ts --open",
+    "build": "tsc -b ./config/tsconfig.json && vite --config ./config/vite.config.ts build"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
