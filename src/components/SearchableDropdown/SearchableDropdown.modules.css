@@ -1,3 +1,7 @@
+:root {
+  --background-color: rgb(216, 213, 213);
+}
+
 .dropdown-container {
   position: relative;
   width: 200px;
@@ -16,7 +20,7 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: inherit;
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .dropdown-icon {
@@ -31,9 +35,8 @@ input {
   top: 100%;
   left: 0;
   width: 100%;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  background: white;
+  background: var(--background-color);
   max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -42,6 +45,9 @@ input {
   margin: 0;
   list-style-type: none;
   display: none;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
 .dropdown-menu.show {
@@ -50,7 +56,6 @@ input {
 
 .dropdown-menu li {
   padding: 10px;
-  border-bottom: 1px solid #eee;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
