@@ -5,8 +5,11 @@ on:
       - main
     paths:
       - "app/**"
+      - "config/**"
       - "nginx/**"
+      - "package*.json"
       - "Dockerfile"
+      - "index.html"
       - "!.github/**"
       - ".github/workflows/deploy.yaml"
   workflow_dispatch:
