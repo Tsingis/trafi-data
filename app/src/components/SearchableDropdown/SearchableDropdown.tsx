@@ -117,7 +117,10 @@ const SearchableDropdown: React.FC<SearchableDropdownProps> = ({
           value={searchQuery}
           onChange={handleSearchChange}
           onKeyDown={handleKeyDown}
-          onClick={() => setIsOpen(true)}
+          onClick={() => {
+            setIsOpen(true)
+            setSearchQuery("")
+          }}
           ref={inputRef}
         />
         <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
