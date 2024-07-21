@@ -9,7 +9,7 @@ updates:
       timezone: "Europe/Helsinki"
     target-branch: "main"
   - package-ecosystem: "npm"
-    directory: "/app"
+    directory: "/"
     versioning-strategy: "increase"
     schedule:
       interval: "weekly"
