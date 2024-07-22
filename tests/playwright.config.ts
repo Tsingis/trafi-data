@@ -1,13 +1,16 @@
 import { defineConfig, devices } from "@playwright/test"
 
 export default defineConfig({
+  testDir: ".",
+  fullyParallel: true,
+  reporter: "list",
   webServer: {
     command: "npm run dev",
     url: "http://localhost:3000",
     reuseExistingServer: !process.env.CI,
     stdout: "ignore",
     stderr: "pipe",
-    timeout: 60000
+    timeout: 60_000
   },
   projects: [
     {
@@ -27,7 +30,7 @@ export default defineConfig({
       },
     },
     {
-      name: "Google Chrome",
+      name: "chromium",
       use: { ...devices["Desktop Chrome"],
         screenshot: "off",
         video: "off",
