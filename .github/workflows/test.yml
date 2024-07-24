@@ -9,7 +9,7 @@ on:
       - "config/**"
       - "package*.json"
       - "index.html"
-      - ".github/workflows/test.yaml"
+      - ".github/workflows/test.yml"
   workflow_dispatch:
 jobs:
   test:

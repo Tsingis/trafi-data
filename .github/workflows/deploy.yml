@@ -10,7 +10,7 @@ on:
       - "package*.json"
       - "Dockerfile"
       - "index.html"
-      - ".github/workflows/deploy.yaml"
+      - ".github/workflows/deploy.yml"
   workflow_dispatch:
 jobs:
   deploy:
