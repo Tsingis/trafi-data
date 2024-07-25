@@ -6,6 +6,8 @@ import "./LineChart.modules.css"
 type LineChartProps = {
   data: Count
   title: string
+  xAxisText?: string
+  yAxisText?: string
   className?: string
   style?: React.CSSProperties
 }
@@ -13,6 +15,8 @@ type LineChartProps = {
 const LineChart: React.FC<LineChartProps> = ({
   data,
   title,
+  xAxisText = "",
+  yAxisText = "Amount",
   className,
   style,
 }) => {
@@ -35,7 +39,8 @@ const LineChart: React.FC<LineChartProps> = ({
               data: Object.values(data),
               borderColor: "rgba(0, 123, 255, 1)",
               backgroundColor: "rgba(0, 123, 255, 0.6)",
-              fill: true,
+              fill: false,
+              pointRadius: 5,
             },
           ],
         },
@@ -82,6 +87,10 @@ const LineChart: React.FC<LineChartProps> = ({
           scales: {
             x: {
               display: true,
+              title: {
+                display: !!xAxisText,
+                text: xAxisText,
+              },
               ticks: {
                 autoSkip: true,
               },
@@ -89,6 +98,10 @@ const LineChart: React.FC<LineChartProps> = ({
             y: {
               display: true,
               beginAtZero: true,
+              title: {
+                display: !!yAxisText,
+                text: yAxisText,
+              },
               ticks: {
                 callback: function (tickValue: string | number) {
                   return (

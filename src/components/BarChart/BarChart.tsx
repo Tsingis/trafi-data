@@ -27,10 +27,10 @@ ChartJS.register(
 
 type BarChartProps = {
   data: Count
-  xAxisLabelMap?: { [key: string]: string }
+  xAxisTextMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
-  xAxisTitle?: string
-  yAxisTitle?: string
+  xAxisText?: string
+  yAxisText?: string
   title?: string
   className?: string
   style?: React.CSSProperties
@@ -38,10 +38,10 @@ type BarChartProps = {
 
 const BarChart: React.FC<BarChartProps> = ({
   data,
-  xAxisLabelMap = {},
+  xAxisTextMap = {},
   colorMap = {},
-  xAxisTitle = "",
-  yAxisTitle = "Amount",
+  xAxisText = "",
+  yAxisText = "Amount",
   title,
   className,
   style,
@@ -57,7 +57,7 @@ const BarChart: React.FC<BarChartProps> = ({
           chartInstanceRef.current.destroy()
         }
 
-        const labels = Object.keys(data).map((key) => xAxisLabelMap[key] || key)
+        const labels = Object.keys(data).map((key) => xAxisTextMap[key] || key)
         const values = Object.values(data)
         const total = values.reduce(
           (sum, value) => (sum ?? 0) + (value ?? 0),
@@ -111,8 +111,8 @@ const BarChart: React.FC<BarChartProps> = ({
           scales: {
             x: {
               title: {
-                display: true,
-                text: xAxisTitle,
+                display: !!xAxisText,
+                text: xAxisText,
               },
               grid: {
                 display: false,
@@ -123,8 +123,8 @@ const BarChart: React.FC<BarChartProps> = ({
             },
             y: {
               title: {
-                display: true,
-                text: yAxisTitle,
+                display: !!yAxisText,
+                text: yAxisText,
               },
               ticks: {
                 callback: function (value) {
@@ -148,7 +148,7 @@ const BarChart: React.FC<BarChartProps> = ({
         chartInstanceRef.current.destroy()
       }
     }
-  }, [data, xAxisLabelMap, xAxisTitle, yAxisTitle, colorMap])
+  }, [data, xAxisTextMap, xAxisText, yAxisText, colorMap])
 
   return (
     <div className={`barchart-container ${className}`} style={style}>
