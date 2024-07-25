@@ -9,3 +9,4 @@ services:
     container_name: trafi
     ports:
       - 3000:3000
+    read_only: false
