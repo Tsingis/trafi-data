@@ -7,7 +7,7 @@ html {
 .data-date {
   display: block;
   font-size: 0.4em;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   margin-top: 0.25em;
 }
 
@@ -16,6 +16,20 @@ html {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   max-width: 1000px;
+  grid-template-areas:
+    "a c"
+    "b d";
+}
+
+@media (max-width: 600px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d";
+  }
 }
 
 .search-container {

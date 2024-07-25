@@ -122,19 +122,23 @@ function App() {
             data={selectedMunicipality.drivingForce}
             xAxisLabelMap={drivingForces}
             colorMap={drivingForcesColors}
-          ></BarChart>
-          <BarChart
-            data={selectedMunicipality.color}
-            colorMap={colors}
+            style={{ gridArea: "a" }}
           ></BarChart>
           <PieChart
             data={selectedMunicipality.drivingForce}
             labelMap={drivingForces}
             colorMap={drivingForcesColors}
+            style={{ gridArea: "b" }}
           />
+          <BarChart
+            data={selectedMunicipality.color}
+            colorMap={colors}
+            style={{ gridArea: "c" }}
+          ></BarChart>
           <PieChart
             data={selectedMunicipality.color}
             colorMap={colors}
+            style={{ gridArea: "d" }}
           ></PieChart>
         </div>
       )}
