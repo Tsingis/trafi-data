@@ -48,7 +48,8 @@ const colors: Mapping = {
   other: "rgba(255, 193, 7, 0.6)",
 }
 
-const municipalities: Municipality[] = data
+const date: Date = new Date(data.date)
+const municipalities: Municipality[] = data.municipalities
 
 const initialMunicipality = municipalities.find((m) => m.name === "Tampere")
 
@@ -96,7 +97,17 @@ function App() {
 
   return (
     <div>
-      <h1>Passenger cars in Finland</h1>
+      <h1>
+        Passenger cars in Finland
+        <span className="data-date">
+          Data from:{" "}
+          {date.toLocaleDateString("en-FI", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </span>
+      </h1>
       <div className="search-container">
         <label>Choose municipality:</label>
         <SearchableDropdown
