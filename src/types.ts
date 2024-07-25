@@ -1,10 +1,6 @@
-export type Mapping = {
-  [key: string]: string
-}
+export type Mapping = Record<string, string>
   
-export type Count = {
-  [key: string]: number | undefined
-}
+export type Count = Record<string, number | undefined>
   
 export type Municipality = {
   code: string
@@ -12,4 +8,5 @@ export type Municipality = {
   countByDrivingForce: Count
   countByColor: Count
   countByRegistrationYear: Count
+  countByMaker: Count
 }

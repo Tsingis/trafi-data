@@ -1,0 +1,28 @@
+.toplist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 500px;
+  margin-left: 100px;
+  border-radius: 8px;
+}
+
+.toplist-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: grey;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.toplist-list {
+  list-style-type: none;
+}
+
+.toplist-item {
+  color: black;
+  margin-bottom: 8px;
+}

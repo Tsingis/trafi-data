@@ -4,6 +4,7 @@ import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdo
 import BarChart from "./components/BarChart/BarChart"
 import LineChart from "./components/LineChart/LineChart"
 import PieChart from "./components/PieChart/PieChart"
+import TopList from "./components/TopList/TopList"
 import { Count, Municipality } from "./types"
 import { colors, drivingForces, drivingForcesColors } from "./constants"
 import "./app.css"
@@ -18,10 +19,12 @@ function App() {
     drivingForce: Count | null
     color: Count | null
     registrationYear: Count | null
+    maker: Count | null
   }>({
     drivingForce: null,
     color: null,
     registrationYear: null,
+    maker: null,
   })
   const [initialValue, setInitialValue] = useState<{
     code: string
@@ -38,6 +41,7 @@ function App() {
         drivingForce: initialMunicipality.countByDrivingForce,
         color: initialMunicipality.countByColor,
         registrationYear: initialMunicipality.countByRegistrationYear,
+        maker: initialMunicipality.countByMaker,
       })
     }
   }, [])
@@ -54,6 +58,7 @@ function App() {
           drivingForce: municipality.countByDrivingForce,
           color: municipality.countByColor,
           registrationYear: municipality.countByRegistrationYear,
+          maker: municipality.countByMaker,
         })
       }
     }
@@ -94,7 +99,8 @@ function App() {
       )}
       {selectedMunicipality.drivingForce &&
         selectedMunicipality.color &&
-        selectedMunicipality.registrationYear && (
+        selectedMunicipality.registrationYear &&
+        selectedMunicipality.maker && (
           <div className="chart-grid">
             <PieChart
               data={selectedMunicipality.drivingForce}
@@ -113,6 +119,12 @@ function App() {
               data={selectedMunicipality.registrationYear}
               title={"Registration years"}
               style={{ gridArea: "c" }}
+            />
+            <TopList
+              data={selectedMunicipality.maker}
+              topX={15}
+              title="Top 15 makers"
+              style={{ gridArea: "d" }}
             />
           </div>
         )}
