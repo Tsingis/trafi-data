@@ -17,12 +17,16 @@ type PieChartProps = {
   data: { [key: string]: number }
   labelMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
+  className?: string
+  style?: React.CSSProperties
 }
 
 const PieChart: React.FC<PieChartProps> = ({
   data,
   labelMap = {},
   colorMap = {},
+  className,
+  style,
 }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null)
   const chartInstanceRef = useRef<ChartJS<"pie"> | null>(null)
@@ -91,7 +95,7 @@ const PieChart: React.FC<PieChartProps> = ({
   }, [data, labelMap, colorMap])
 
   return (
-    <div className="piechart-container">
+    <div className={`piechart-container ${className}`} style={style}>
       <canvas ref={chartRef} />
     </div>
   )

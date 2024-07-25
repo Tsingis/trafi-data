@@ -4,6 +4,13 @@ html {
   background-color:rgb(223, 220, 220);
 }
 
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  max-width: 1000px;
+}
+
 .search-container {
   display: flex;
   align-items: center;

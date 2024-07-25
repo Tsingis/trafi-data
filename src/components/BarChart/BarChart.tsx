@@ -30,6 +30,8 @@ type BarChartProps = {
   xAxisTitle?: string
   yAxisTitle?: string
   colorMap?: { [key: string]: string }
+  className?: string
+  style?: React.CSSProperties
 }
 
 const BarChart: React.FC<BarChartProps> = ({
@@ -38,6 +40,8 @@ const BarChart: React.FC<BarChartProps> = ({
   colorMap = {},
   xAxisTitle = "",
   yAxisTitle = "Amount",
+  className,
+  style,
 }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null)
   const chartInstanceRef = useRef<ChartJS<"bar"> | null>(null)
@@ -130,7 +134,7 @@ const BarChart: React.FC<BarChartProps> = ({
   }, [data, xAxisLabelMap, xAxisTitle, yAxisTitle, colorMap])
 
   return (
-    <div className="barchart-container">
+    <div className={`barchart-container ${className}`} style={style}>
       <canvas ref={chartRef} />
     </div>
   )

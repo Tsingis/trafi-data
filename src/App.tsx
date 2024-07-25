@@ -1,38 +1,51 @@
-import { useState, useEffect } from "react"
 import data from "./assets/data.json"
-import BarChart from "./components/BarChart/BarChart"
+import { useState, useEffect } from "react"
 import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdown"
-import "./app.css"
+import BarChart from "./components/BarChart/BarChart"
 import PieChart from "./components/PieChart/PieChart"
+import "./app.css"
 
-type DrivingForceMapping = {
+type Mapping = {
   [key: string]: string
 }
 
-type DrivingForceCount = {
+type Count = {
   [key: string]: number
 }
 
 type Municipality = {
   code: string
   name: string
-  countByDrivingForce: DrivingForceCount
+  countByDrivingForce: Count
+  countByColor: Count
 }
 
-const drivingForces: DrivingForceMapping = {
-  "1": "Petrol",
-  "2": "Diesel",
-  "3": "Hybrid",
-  "4": "Electricity",
-  "5": "Other",
+const drivingForces: Mapping = {
+  "1": "petrol",
+  "2": "diesel",
+  "3": "hybrid",
+  "4": "electricity",
+  "5": "other",
 }
 
-const drivingForcesColors: DrivingForceMapping = {
+const drivingForcesColors: Mapping = {
   "1": "rgba(0, 123, 255, 0.6)",
   "2": "rgba(220, 53, 69, 0.6)",
   "3": "rgba(255, 193, 7, 0.6)",
   "4": "rgba(40, 167, 69, 0.6)",
-  "5": "rgba(108, 117, 125, 0.6)",
+  "5": "rgba(93, 93, 93, 0.6)",
+}
+
+const colors: Mapping = {
+  black: "rgba(0, 0, 0, 0.6)",
+  blue: "rgba(0, 123, 255, 0.6)",
+  brown: "rgba(53, 33, 0, 0.6)",
+  green: "rgba(40, 167, 69, 0.6)",
+  grey: "rgba(93, 93, 93, 0.6)",
+  red: "rgba(220, 53, 69, 0.6)",
+  silver: "rgba(170, 169, 173, 0.6)",
+  white: "rgba(255, 255, 255, 0.9)",
+  other: "rgba(255, 193, 7, 0.6)",
 }
 
 const municipalities: Municipality[] = data
@@ -40,8 +53,13 @@ const municipalities: Municipality[] = data
 const initialMunicipality = municipalities.find((m) => m.name === "Tampere")
 
 function App() {
-  const [selectedMunicipalityData, setSelectedMunicipalityData] =
-    useState<DrivingForceCount | null>(null)
+  const [selectedMunicipality, setSelectedMunicipality] = useState<{
+    drivingForce: Count | null
+    color: Count | null
+  }>({
+    drivingForce: null,
+    color: null,
+  })
   const [initialValue, setInitialValue] = useState<{
     code: string
     name: string
@@ -53,7 +71,10 @@ function App() {
         code: initialMunicipality.code,
         name: initialMunicipality.name,
       })
-      setSelectedMunicipalityData(initialMunicipality.countByDrivingForce)
+      setSelectedMunicipality({
+        drivingForce: initialMunicipality.countByDrivingForce,
+        color: initialMunicipality.countByColor,
+      })
     }
   }, [])
 
@@ -65,7 +86,10 @@ function App() {
         (m) => m.code === selectedOption.code,
       )
       if (municipality) {
-        setSelectedMunicipalityData(municipality.countByDrivingForce)
+        setSelectedMunicipality({
+          drivingForce: municipality.countByDrivingForce,
+          color: municipality.countByColor,
+        })
       }
     }
   }
@@ -81,17 +105,25 @@ function App() {
           initialValue={initialValue}
         />
       </div>
-      {selectedMunicipalityData && (
-        <div>
+      {selectedMunicipality.drivingForce && selectedMunicipality.color && (
+        <div className="chart-grid">
           <BarChart
-            data={selectedMunicipalityData}
+            data={selectedMunicipality.drivingForce}
             xAxisLabelMap={drivingForces}
+            colorMap={drivingForcesColors}
+          ></BarChart>
+          <BarChart
+            data={selectedMunicipality.color}
+            colorMap={colors}
+          ></BarChart>
+          <PieChart
+            data={selectedMunicipality.drivingForce}
+            labelMap={drivingForces}
             colorMap={drivingForcesColors}
           />
           <PieChart
-            data={selectedMunicipalityData}
-            labelMap={drivingForces}
-            colorMap={drivingForcesColors}
+            data={selectedMunicipality.color}
+            colorMap={colors}
           ></PieChart>
         </div>
       )}
