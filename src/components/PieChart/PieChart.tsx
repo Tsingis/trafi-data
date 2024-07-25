@@ -17,6 +17,7 @@ type PieChartProps = {
   data: { [key: string]: number }
   labelMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
+  title?: string
   className?: string
   style?: React.CSSProperties
 }
@@ -25,6 +26,7 @@ const PieChart: React.FC<PieChartProps> = ({
   data,
   labelMap = {},
   colorMap = {},
+  title,
   className,
   style,
 }) => {
@@ -54,17 +56,28 @@ const PieChart: React.FC<PieChartProps> = ({
             {
               data: values,
               backgroundColor: backgroundColors,
-              borderColor: "rgba(0, 0, 0, 0.1)",
-              borderWidth: 1,
+              borderColor: "rgb(223, 220, 220)",
+              borderWidth: 2,
             },
           ],
         }
 
         const chartOptions: ChartOptions<"pie"> = {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
+            title: {
+              display: !!title,
+              text: title,
+              position: "top",
+            },
             legend: {
               display: true,
+              position: "right",
+              align: "center",
+              labels: {
+                usePointStyle: true,
+              },
             },
             tooltip: {
               callbacks: {

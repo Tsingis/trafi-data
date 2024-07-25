@@ -1,5 +1,11 @@
 .piechart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 400px;
-  margin-top: 15px;
-  margin-left: 5px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
 }

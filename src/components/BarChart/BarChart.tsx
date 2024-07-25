@@ -27,9 +27,10 @@ ChartJS.register(
 type BarChartProps = {
   data: { [key: string]: number }
   xAxisLabelMap?: { [key: string]: string }
+  colorMap?: { [key: string]: string }
   xAxisTitle?: string
   yAxisTitle?: string
-  colorMap?: { [key: string]: string }
+  title?: string
   className?: string
   style?: React.CSSProperties
 }
@@ -40,6 +41,7 @@ const BarChart: React.FC<BarChartProps> = ({
   colorMap = {},
   xAxisTitle = "",
   yAxisTitle = "Amount",
+  title,
   className,
   style,
 }) => {
@@ -76,7 +78,13 @@ const BarChart: React.FC<BarChartProps> = ({
 
         const chartOptions: ChartOptions<"bar"> = {
           responsive: true,
+          maintainAspectRatio: false,
           plugins: {
+            title: {
+              display: !!title,
+              text: title,
+              position: "top",
+            },
             legend: {
               display: false,
             },

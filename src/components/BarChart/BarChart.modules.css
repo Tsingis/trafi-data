@@ -1,4 +1,11 @@
 .barchart-container {
-  max-width: 600px;
-  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
 }

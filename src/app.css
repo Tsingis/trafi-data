@@ -11,29 +11,33 @@ html {
   margin-top: 0.25em;
 }
 
-.chart-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  max-width: 1000px;
-  grid-template-areas:
-    "a c"
-    "b d";
-}
-
-@media (max-width: 600px) {
-  .chart-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "a"
-      "b"
-      "c"
-      "d";
-  }
-}
-
 .search-container {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.total-count-label {
+  margin-top: 15px;
+}
+
+.total-count {
+  font-weight: bold;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 850px;
+  grid-template-areas:
+    "a b"
+}
+
+@media (max-width: 800px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a"
+      "b";
+  }
 }
