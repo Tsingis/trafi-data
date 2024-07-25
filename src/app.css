@@ -31,6 +31,7 @@ html {
   max-width: 850px;
   grid-template-areas:
     "a b"
+    "c d";
 }
 
 @media (max-width: 800px) {
@@ -38,6 +39,8 @@ html {
     grid-template-columns: 1fr;
     grid-template-areas:
       "a"
-      "b";
+      "b"
+      "c"
+      "d";
   }
 }

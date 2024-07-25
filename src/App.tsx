@@ -1,7 +1,8 @@
-import data from "./assets/data.json"
 import { useState, useEffect } from "react"
+import data from "./assets/data.json"
 import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdown"
 import BarChart from "./components/BarChart/BarChart"
+import LineChart from "./components/LineChart/LineChart"
 import PieChart from "./components/PieChart/PieChart"
 import { Count, Municipality } from "./types"
 import { colors, drivingForces, drivingForcesColors } from "./constants"
@@ -16,9 +17,11 @@ function App() {
   const [selectedMunicipality, setSelectedMunicipality] = useState<{
     drivingForce: Count | null
     color: Count | null
+    registrationYear: Count | null
   }>({
     drivingForce: null,
     color: null,
+    registrationYear: null,
   })
   const [initialValue, setInitialValue] = useState<{
     code: string
@@ -34,6 +37,7 @@ function App() {
       setSelectedMunicipality({
         drivingForce: initialMunicipality.countByDrivingForce,
         color: initialMunicipality.countByColor,
+        registrationYear: initialMunicipality.countByRegistrationYear,
       })
     }
   }, [])
@@ -49,6 +53,7 @@ function App() {
         setSelectedMunicipality({
           drivingForce: municipality.countByDrivingForce,
           color: municipality.countByColor,
+          registrationYear: municipality.countByRegistrationYear,
         })
       }
     }
@@ -56,7 +61,7 @@ function App() {
 
   const totalCount = selectedMunicipality.drivingForce
     ? Object.values(selectedMunicipality.drivingForce).reduce(
-        (sum, count) => sum + count,
+        (sum, count) => (sum ?? 0) + (count ?? 0),
         0,
       )
     : 0
@@ -87,23 +92,30 @@ function App() {
           Total car count: <span className="total-count">{totalCount}</span>
         </div>
       )}
-      {selectedMunicipality.drivingForce && selectedMunicipality.color && (
-        <div className="chart-grid">
-          <PieChart
-            data={selectedMunicipality.drivingForce}
-            labelMap={drivingForces}
-            colorMap={drivingForcesColors}
-            title={"Driving forces"}
-            style={{ gridArea: "a" }}
-          />
-          <BarChart
-            data={selectedMunicipality.color}
-            colorMap={colors}
-            title={"Colors"}
-            style={{ gridArea: "b" }}
-          ></BarChart>
-        </div>
-      )}
+      {selectedMunicipality.drivingForce &&
+        selectedMunicipality.color &&
+        selectedMunicipality.registrationYear && (
+          <div className="chart-grid">
+            <PieChart
+              data={selectedMunicipality.drivingForce}
+              labelMap={drivingForces}
+              colorMap={drivingForcesColors}
+              title={"Driving forces"}
+              style={{ gridArea: "a" }}
+            />
+            <BarChart
+              data={selectedMunicipality.color}
+              colorMap={colors}
+              title={"Colors"}
+              style={{ gridArea: "b" }}
+            />
+            <LineChart
+              data={selectedMunicipality.registrationYear}
+              title={"Registration years"}
+              style={{ gridArea: "c" }}
+            />
+          </div>
+        )}
     </div>
   )
 }

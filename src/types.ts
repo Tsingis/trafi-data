@@ -3,7 +3,7 @@ export type Mapping = {
 }
   
 export type Count = {
-  [key: string]: number
+  [key: string]: number | undefined
 }
   
 export type Municipality = {
@@ -11,4 +11,5 @@ export type Municipality = {
   name: string
   countByDrivingForce: Count
   countByColor: Count
+  countByRegistrationYear: Count
 }

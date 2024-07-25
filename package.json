@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --config ./config/vite.config.ts --open",
     "test": "npx playwright test --config=tests/playwright.config.ts",
+    "type-check": "tsc -p config/tsconfig.json --noEmit --watch",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./config/.eslintrc.cjs",
     "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./config/.eslintrc.cjs --fix",
     "setup-test": "npx playwright install --with-deps",

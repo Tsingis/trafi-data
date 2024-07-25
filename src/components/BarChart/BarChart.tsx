@@ -11,6 +11,7 @@ import {
   ChartData,
   ChartOptions,
 } from "chart.js"
+import { Count } from "../../types"
 import "./BarChart.modules.css"
 
 // Register necessary Chart.js components
@@ -25,7 +26,7 @@ ChartJS.register(
 )
 
 type BarChartProps = {
-  data: { [key: string]: number }
+  data: Count
   xAxisLabelMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
   xAxisTitle?: string
@@ -58,7 +59,10 @@ const BarChart: React.FC<BarChartProps> = ({
 
         const labels = Object.keys(data).map((key) => xAxisLabelMap[key] || key)
         const values = Object.values(data)
-        const total = values.reduce((sum, value) => sum + value, 0)
+        const total = values.reduce(
+          (sum, value) => (sum ?? 0) + (value ?? 0),
+          0,
+        )
 
         const defaultColor = "rgba(0, 123, 255, 0.6)"
         const backgroundColors = Object.keys(data).map(
@@ -70,7 +74,7 @@ const BarChart: React.FC<BarChartProps> = ({
           datasets: [
             {
               label: "Count",
-              data: values,
+              data: values.filter((x) => x !== undefined),
               backgroundColor: backgroundColors,
             },
           ],
@@ -84,6 +88,11 @@ const BarChart: React.FC<BarChartProps> = ({
               display: !!title,
               text: title,
               position: "top",
+              color: "grey",
+              font: {
+                family: "Arial, sans-serif",
+                weight: "bold",
+              },
             },
             legend: {
               display: false,
@@ -93,7 +102,7 @@ const BarChart: React.FC<BarChartProps> = ({
                 label: function (context) {
                   const label = context.label || ""
                   const value = context.raw as number
-                  const percentage = ((value / total) * 100).toFixed(2)
+                  const percentage = ((value / (total ?? 1)) * 100).toFixed(2)
                   return `${label}: ${value} (${percentage}%)`
                 },
               },

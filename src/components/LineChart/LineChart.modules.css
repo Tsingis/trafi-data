@@ -1,9 +1,9 @@
-.barchart-container {
+.linechart-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
-  min-height: 300px;
+  min-width: 500px;
+  max-width: 600px;
 }
 
 canvas {

@@ -8,13 +8,14 @@ import {
   ChartData,
   ChartOptions,
 } from "chart.js"
+import { Count } from "../../types"
 import "./PieChart.modules.css"
 
 // Register necessary Chart.js components
 ChartJS.register(ArcElement, Tooltip, Legend, PieController)
 
 type PieChartProps = {
-  data: { [key: string]: number }
+  data: Count
   labelMap?: { [key: string]: string }
   colorMap?: { [key: string]: string }
   title?: string
@@ -43,7 +44,10 @@ const PieChart: React.FC<PieChartProps> = ({
 
         const labels = Object.keys(data).map((key) => labelMap[key] || key)
         const values = Object.values(data)
-        const total = values.reduce((sum, value) => sum + value, 0)
+        const total = values.reduce(
+          (sum, value) => (sum ?? 0) + (value ?? 0),
+          0,
+        )
 
         const defaultColor = "rgba(0, 123, 255, 0.6)"
         const backgroundColors = Object.keys(data).map(
@@ -54,7 +58,7 @@ const PieChart: React.FC<PieChartProps> = ({
           labels,
           datasets: [
             {
-              data: values,
+              data: values.filter((x) => x !== undefined),
               backgroundColor: backgroundColors,
               borderColor: "rgb(223, 220, 220)",
               borderWidth: 2,
@@ -70,6 +74,11 @@ const PieChart: React.FC<PieChartProps> = ({
               display: !!title,
               text: title,
               position: "top",
+              color: "grey",
+              font: {
+                family: "Arial, sans-serif",
+                weight: "bold",
+              },
             },
             legend: {
               display: true,
@@ -84,7 +93,7 @@ const PieChart: React.FC<PieChartProps> = ({
                 label: function (context) {
                   const label = context.label || ""
                   const value = context.raw as number
-                  const percentage = ((value / total) * 100).toFixed(2)
+                  const percentage = ((value / (total ?? 1)) * 100).toFixed(2)
                   return `${label}: ${value} (${percentage}%)`
                 },
               },
