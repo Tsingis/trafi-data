@@ -130,6 +130,7 @@ function App() {
             <LineChart
               data={selectedMunicipality.registrationYear}
               title={"Registration years"}
+              firstXAxisLabelText="<1980"
               style={{ gridArea: "c" }}
             />
             <TopList

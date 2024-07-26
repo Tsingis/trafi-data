@@ -8,6 +8,7 @@ type LineChartProps = {
   title: string
   xAxisText?: string
   yAxisText?: string
+  firstXAxisLabelText?: string
   className?: string
   style?: React.CSSProperties
 }
@@ -17,6 +18,7 @@ const LineChart: React.FC<LineChartProps> = ({
   title,
   xAxisText = "",
   yAxisText = "Amount",
+  firstXAxisLabelText = "",
   className,
   style,
 }) => {
@@ -93,6 +95,18 @@ const LineChart: React.FC<LineChartProps> = ({
               },
               ticks: {
                 autoSkip: true,
+                callback: function (value: string | number, index: number) {
+                  const chart = this.chart
+                  const labels = chart.data.labels as string[]
+
+                  if (labels && labels.length > 0) {
+                    if (index === 0 && firstXAxisLabelText) {
+                      return firstXAxisLabelText
+                    }
+                    return labels[index]
+                  }
+                  return value
+                },
               },
             },
             y: {
@@ -120,7 +134,7 @@ const LineChart: React.FC<LineChartProps> = ({
         chart.destroy()
       }
     }
-  }, [data, title])
+  }, [data, title, firstXAxisLabelText])
 
   return (
     <div className={`linechart-container ${className}`} style={style}>
