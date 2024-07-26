@@ -13,6 +13,7 @@ const date: Date = new Date(data.date)
 const municipalities: Municipality[] = data.municipalities
 
 const initialMunicipality = municipalities.find((m) => m.name === "Finland")
+const unknownMunicipality = municipalities.find((m) => m.name === "Unknown")
 
 function App() {
   const [selectedMunicipality, setSelectedMunicipality] = useState<{
@@ -74,17 +75,18 @@ function App() {
   const searchOptions = [
     initialMunicipality,
     ...municipalities
-      .filter((x) => x != initialMunicipality)
+      .filter((x) => x !== initialMunicipality && x !== unknownMunicipality)
       .map((m) => ({
         code: m.code,
         name: m.name,
       })),
+    unknownMunicipality,
   ].filter((x) => x !== undefined)
 
   return (
     <div>
       <h1>
-        Passenger cars in Finland
+        Registered passenger cars in Finland
         <span className="data-date">
           Data from{" "}
           {date.toLocaleDateString("en-FI", {
