@@ -12,7 +12,7 @@ import "./app.css"
 const date: Date = new Date(data.date)
 const municipalities: Municipality[] = data.municipalities
 
-const initialMunicipality = municipalities.find((m) => m.name === "Tampere")
+const initialMunicipality = municipalities.find((m) => m.name === "Finland")
 
 function App() {
   const [selectedMunicipality, setSelectedMunicipality] = useState<{
@@ -71,6 +71,16 @@ function App() {
       )
     : 0
 
+  const searchOptions = [
+    initialMunicipality,
+    ...municipalities
+      .filter((x) => x != initialMunicipality)
+      .map((m) => ({
+        code: m.code,
+        name: m.name,
+      })),
+  ].filter((x) => x !== undefined)
+
   return (
     <div>
       <h1>
@@ -87,7 +97,7 @@ function App() {
       <div className="search-container">
         <div>Choose municipality:</div>
         <SearchableDropdown
-          options={municipalities.map((m) => ({ code: m.code, name: m.name }))}
+          options={searchOptions}
           onSelect={handleSelect}
           initialValue={initialValue}
         />
