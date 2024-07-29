@@ -1,0 +1,64 @@
+Parameters:
+  BucketName:
+    Type: String
+    Description: Name for the S3 bucket
+
+Resources:
+  Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Ref BucketName
+      AccessControl: Private
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerPreferred
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: "DeleteOldVersions"
+            Status: Enabled
+            NoncurrentVersionExpiration:
+              NoncurrentDays: 1
+          - Id: "DeleteOld"
+            Status: Enabled
+            ExpirationInDays: 1
+            TagFilters:
+              - Key: "AllowExpiration"
+                Value: "true"
+      CorsConfiguration:
+        CorsRules:
+          - AllowedOrigins:
+              - "*"
+            AllowedMethods:
+              - GET
+            AllowedHeaders:
+              - "*"
+            MaxAge: 3000
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: false
+        RestrictPublicBuckets: false
+
+  BucketPolicy:
+    Type: "AWS::S3::BucketPolicy"
+    Properties:
+      Bucket: !Ref BucketName
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal: "*"
+            Action: "s3:GetObject"
+            Resource: !Sub "arn:aws:s3:::${BucketName}/data.json"
+            Condition:
+              StringEquals:
+                s3:ExistingObjectTag/PublicAccess: "true"
+          - Effect: Deny
+            Principal: "*"
+            Action: "s3:GetObject"
+            Resource: !Sub "arn:aws:s3:::${BucketName}/*"
+            Condition:
+              StringNotEquals:
+                s3:ExistingObjectTag/PublicAccess: "true"

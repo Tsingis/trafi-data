@@ -2,6 +2,9 @@ FROM node:22-alpine AS build
 
 WORKDIR /app
 
+ARG ENV_FILE=.env.aws
+COPY $ENV_FILE ./.env
+
 COPY src ./src
 COPY config ./config
 COPY index.html ./

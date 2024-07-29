@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "http": "python ./data/server.py",
     "dev": "vite --config ./config/vite.config.ts --open",
     "test": "npx playwright test --config=tests/playwright.config.ts",
     "type-check": "tsc -p config/tsconfig.json --noEmit --watch",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.45.3",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.17.0",

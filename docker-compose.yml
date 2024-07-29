@@ -5,6 +5,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        ENV_FILE: .env
     image: trafi
     container_name: trafi
     ports:
