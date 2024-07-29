@@ -16,11 +16,12 @@
   color: grey;
   margin-top: 25px;
   margin-bottom: 0;
-  margin-left: 15px;
 }
 
 .toplist-list {
   list-style-type: none;
+  margin-left: 15px;
+  padding: 0;
 }
 
 .toplist-item {
