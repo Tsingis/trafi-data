@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import data from "./assets/data.json"
+import Loading from "./components/Loading/Loading"
 import SearchableDropdown from "./components/SearchableDropdown/SearchableDropdown"
 import BarChart from "./components/BarChart/BarChart"
 import LineChart from "./components/LineChart/LineChart"
@@ -9,13 +9,12 @@ import { Count, Municipality } from "./types"
 import { colors, drivingForces, drivingForcesColors } from "./constants"
 import "./app.css"
 
-const date: Date = new Date(data.date)
-const municipalities: Municipality[] = data.municipalities
-
-const initialMunicipality = municipalities.find((m) => m.name === "Finland")
-const unknownMunicipality = municipalities.find((m) => m.name === "Unknown")
-
 function App() {
+  const [data, setData] = useState<{
+    date: string
+    municipalities: Municipality[]
+  } | null>(null)
+
   const [selectedMunicipality, setSelectedMunicipality] = useState<{
     drivingForce: Count | null
     color: Count | null
@@ -27,25 +26,47 @@ function App() {
     registrationYear: null,
     maker: null,
   })
+
   const [initialValue, setInitialValue] = useState<{
     code: string
     name: string
   } | null>(null)
 
   useEffect(() => {
-    if (initialMunicipality) {
-      setInitialValue({
-        code: initialMunicipality.code,
-        name: initialMunicipality.name,
+    fetch(import.meta.env.VITE_DATA_URL)
+      .then((response) => {
+        return response.json()
       })
-      setSelectedMunicipality({
-        drivingForce: initialMunicipality.countByDrivingForce,
-        color: initialMunicipality.countByColor,
-        registrationYear: initialMunicipality.countByRegistrationYear,
-        maker: initialMunicipality.countByMaker,
+      .then((content) => {
+        setData(content)
+        const initialMunicipality = content.municipalities.find(
+          (m: { name: string }) => m.name === "Finland",
+        )
+        if (initialMunicipality) {
+          setInitialValue({
+            code: initialMunicipality.code,
+            name: initialMunicipality.name,
+          })
+          setSelectedMunicipality({
+            drivingForce: initialMunicipality.countByDrivingForce,
+            color: initialMunicipality.countByColor,
+            registrationYear: initialMunicipality.countByRegistrationYear,
+            maker: initialMunicipality.countByMaker,
+          })
+        }
       })
-    }
+      .catch((error) => {
+        console.error("Error loading data:", error)
+      })
   }, [])
+
+  if (!data) {
+    return <Loading size="4x" />
+  }
+
+  const date: Date = new Date(data.date)
+  const municipalities: Municipality[] = data.municipalities
+  const unknownMunicipality = municipalities.find((m) => m.name === "Unknown")
 
   const handleSelect = (
     selectedOption: { code: string; name: string } | null,
@@ -73,9 +94,13 @@ function App() {
     : 0
 
   const searchOptions = [
-    initialMunicipality,
+    municipalities.find((m) => m.name === "Finland"),
     ...municipalities
-      .filter((x) => x !== initialMunicipality && x !== unknownMunicipality)
+      .filter(
+        (x) =>
+          x !== municipalities.find((m) => m.name === "Finland") &&
+          x !== unknownMunicipality,
+      )
       .map((m) => ({
         code: m.code,
         name: m.name,

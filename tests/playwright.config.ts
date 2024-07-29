@@ -4,14 +4,21 @@ export default defineConfig({
   testDir: ".",
   fullyParallel: true,
   reporter: "list",
-  webServer: {
-    command: "npm run dev",
-    url: "http://localhost:3000",
+  webServer: [{
+    command: "npm run http",
     reuseExistingServer: !process.env.CI,
     stdout: "ignore",
     stderr: "pipe",
     timeout: 60_000
   },
+  {
+    command: "npm run dev",
+    reuseExistingServer: !process.env.CI,
+    stdout: "ignore",
+    stderr: "pipe",
+    timeout: 60_000
+  },
+],
   projects: [
     {
       name: "firefox",
