@@ -79,6 +79,9 @@ const PieChart: React.FC<PieChartProps> = ({
                 family: "Arial, sans-serif",
                 weight: "bold",
               },
+              padding: {
+                top: 10,
+              },
             },
             legend: {
               display: true,
