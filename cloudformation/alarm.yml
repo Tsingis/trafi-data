@@ -1,0 +1,70 @@
+Parameters:
+  AlarmName:
+    Type: String
+    Default: cars-data-alarm
+    Description: Name of alarm
+  LogGroupName:
+    Type: String
+    Description: Name of lambda log group
+  MetricFilterPattern:
+    Type: String
+    Default: '"ERROR:"'
+    Description: Metric filter pattern
+  MetricName:
+    Type: String
+    Default: cars-data-error-metric
+    Description: Name of custom error metric
+  MetricNamespace:
+    Type: String
+    Default: Cars-Data/Errors
+    Description: Namespace of custom error metric
+  SNSTopicName:
+    Type: String
+    Default: cars-data-error-alarms
+    Description: Name of SNS topic
+  EmailRecipient:
+    Type: String
+    Description: Email recipient address
+
+Resources:
+  SNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      FifoTopic: false
+      Subscription:
+        - Endpoint: !Ref EmailRecipient
+          Protocol: email
+      TopicName: !Ref SNSTopicName
+
+  Metric:
+    Type: AWS::Logs::MetricFilter
+    Properties:
+      FilterPattern: !Ref MetricFilterPattern
+      LogGroupName: !Ref LogGroupName
+      MetricTransformations:
+        - MetricName: !Ref MetricName
+          MetricNamespace: !Ref MetricNamespace
+          MetricValue: 1
+
+  CloudWatchAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      ActionsEnabled: true
+      AlarmActions:
+        - Fn::Join:
+            - ":"
+            - - arn:aws:sns
+              - !Ref AWS::Region
+              - !Ref AWS::AccountId
+              - !Ref SNSTopicName
+      AlarmDescription: Email notifications for cars data lambda errors
+      AlarmName: !Ref AlarmName
+      ComparisonOperator: GreaterThanThreshold
+      DatapointsToAlarm: 1
+      EvaluationPeriods: 1
+      MetricName: !Ref MetricName
+      Namespace: !Ref MetricNamespace
+      Period: 60
+      Statistic: SampleCount
+      Threshold: 0
+      TreatMissingData: missing
