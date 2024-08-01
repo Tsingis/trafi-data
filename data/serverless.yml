@@ -1,0 +1,39 @@
+org: tsingis
+app: cars-data
+service: cars-data
+
+provider:
+  name: aws
+  stage: ${opt:stage, "prod"}
+  runtime: python3.12
+  runtimeManagement: auto
+  versionFunctions: false
+  architecture: x86_64
+  region: ${opt:region, "eu-north-1"}
+  memorySize: 10240
+  timeout: 180
+  logRetentionInDays: 90
+  environment:
+    BUCKET: ${env:BUCKET}
+    FILENAME: ${env:FILENAME}
+
+functions:
+  handler:
+    handler: lambda.handler
+    role: arn:aws:iam::${aws:accountId}:role/CarsDataLambdaRole
+    events:
+      - schedule: cron(0 0 1 * ? *)
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    fileName: requirements.txt
+
+package:
+  patterns:
+    - "!**"
+    - "util/**.py"
+    - lambda.py

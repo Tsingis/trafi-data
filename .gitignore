@@ -1,3 +1,5 @@
+__pycache__
+.serverless
 node_modules
 test-results
 vite.config.*.timestamp-*

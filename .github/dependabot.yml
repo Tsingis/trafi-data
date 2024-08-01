@@ -31,3 +31,12 @@ updates:
       day: "sunday"
       time: "21:00"
       timezone: "Europe/Helsinki"
+  - package-ecosystem: "npm"
+    directory: "/data"
+    versioning-strategy: "increase"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "21:00"
+      timezone: "Europe/Helsinki"
+    target-branch: "main"

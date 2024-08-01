@@ -1,0 +1,13 @@
+{
+  "name": "cars-data-lambda",
+  "version": "1.0.0",
+  "description": "Cars data processing",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "package": "serverless package"
+  },
+  "devDependencies": {
+    "serverless": "^4.1.17",
+    "serverless-python-requirements": "^6.1.0"
+  }
+}
