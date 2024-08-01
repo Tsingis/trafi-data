@@ -26,7 +26,7 @@ def get_vehicles():
         "vari": "color",
         "kayttovoima": "driving_force",
         "sahkohybridi": "is_hybrid",
-        "merkkiSelvakielinen": "maker",
+        "merkkiSelvakielinen": "maker_text",
         "kunta": "municipality",
         "matkamittarilukema": "odometer",
     }

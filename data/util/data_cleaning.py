@@ -71,7 +71,7 @@ def clean(vehicles: pd.DataFrame, municipalities: dict):
     )
 
     # Makers more unique
-    vehicles["maker"] = vehicles["maker"].fillna("").str.lower()
+    vehicles["maker_text"] = vehicles["maker_text"].fillna("").str.lower()
 
     # Makers grouping
     maker_map = {
@@ -130,7 +130,14 @@ def clean(vehicles: pd.DataFrame, municipalities: dict):
                 return target
         return "Other"
 
-    vehicles["maker_new"] = vehicles["maker"].map(group_maker)
+    vehicles["maker"] = vehicles["maker_text"].map(group_maker)
+
+    vehicles.drop(
+        labels=["registration_date", "intro_date", "intro_year", "is_hybrid"],
+        axis=1,
+        inplace=True,
+    )
+
     return vehicles, municipalities
 
 
