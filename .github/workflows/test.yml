@@ -10,7 +10,7 @@ on:
       - "package*.json"
       - ".env.*"
       - "index.html"
-      - "data/server.py"
+      - "util/http_server.py"
       - "data/data.json"
       - ".github/workflows/test.yml"
   workflow_dispatch:
