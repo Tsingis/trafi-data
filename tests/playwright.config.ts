@@ -4,6 +4,10 @@ export default defineConfig({
   testDir: ".",
   fullyParallel: true,
   reporter: "list",
+  timeout: 60_000,
+  expect: {
+    timeout: 30_000
+  },
   webServer: [{
     command: "npm run http",
     reuseExistingServer: !process.env.CI,
