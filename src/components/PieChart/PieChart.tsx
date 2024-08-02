@@ -117,7 +117,7 @@ const PieChart: React.FC<PieChartProps> = ({
         chartInstanceRef.current.destroy()
       }
     }
-  }, [data, labelMap, colorMap])
+  }, [data, labelMap, colorMap, title])
 
   return (
     <div className={`piechart-container ${className}`} style={style}>

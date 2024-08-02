@@ -148,7 +148,7 @@ const BarChart: React.FC<BarChartProps> = ({
         chartInstanceRef.current.destroy()
       }
     }
-  }, [data, xAxisTextMap, xAxisText, yAxisText, colorMap])
+  }, [data, xAxisTextMap, xAxisText, yAxisText, title, colorMap])
 
   return (
     <div className={`barchart-container ${className}`} style={style}>

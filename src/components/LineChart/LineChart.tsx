@@ -65,7 +65,7 @@ const LineChart: React.FC<LineChartProps> = ({
               labels: {
                 filter: (item) => item.text === title,
                 generateLabels: function (chart) {
-                  return chart.data.datasets.map((dataset, _) => ({
+                  return chart.data.datasets.map((dataset) => ({
                     text: dataset.label as string,
                     fontColor: "grey",
                     fillStyle: "transparent",
@@ -134,7 +134,7 @@ const LineChart: React.FC<LineChartProps> = ({
         chart.destroy()
       }
     }
-  }, [data, title, firstXAxisLabelText])
+  }, [data, title, xAxisText, yAxisText, firstXAxisLabelText])
 
   return (
     <div className={`linechart-container ${className}`} style={style}>
