@@ -2,6 +2,14 @@ Parameters:
   BucketName:
     Type: String
     Description: Name for the S3 bucket
+  CurrentExpirationDays:
+    Type: Number
+    Default: 1
+    Description: Expiration in in days for current objects
+  NonCurrentExpirationDays:
+    Type: Number
+    Default: 1
+    Description: Expiration in in days for non current objects
 
 Resources:
   Bucket:
@@ -19,10 +27,10 @@ Resources:
           - Id: "DeleteOldVersions"
             Status: Enabled
             NoncurrentVersionExpiration:
-              NoncurrentDays: 1
+              NoncurrentDays: !Ref NonCurrentExpirationDays
           - Id: "DeleteOld"
             Status: Enabled
-            ExpirationInDays: 1
+            ExpirationInDays: !Ref CurrentExpirationDays
             TagFilters:
               - Key: "AllowExpiration"
                 Value: "true"
