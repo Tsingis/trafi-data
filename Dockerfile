@@ -6,8 +6,6 @@ ARG ENV_FILE=.env
 COPY $ENV_FILE ./.env
 
 COPY src ./src
-COPY config ./config
-COPY index.html ./
 COPY package*.json ./
 
 RUN npm ci

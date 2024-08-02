@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "http": "python ./util/http_server.py",
-    "dev": "vite --mode dev --config ./config/vite.config.ts --open",
+    "dev": "vite --config ./src/config/vite.config.ts --open",
     "test": "npx playwright test --config=tests/playwright.config.ts",
-    "type-check": "tsc -p config/tsconfig.json --noEmit --watch",
-    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./config/.eslintrc.cjs",
-    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./config/.eslintrc.cjs --fix",
+    "type-check": "tsc -p src/config/tsconfig.json --noEmit --watch",
+    "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./src/config/.eslintrc.cjs",
+    "lint:fix": "npx eslint . --ext .js,.jsx,.ts,.tsx --config ./src/config/.eslintrc.cjs --fix",
     "setup-test": "npx playwright install --with-deps",
-    "build": "tsc -b ./config/tsconfig.json && vite --config ./config/vite.config.ts build"
+    "build": "tsc -b ./src/config/tsconfig.json && vite --config ./src/config/vite.config.ts build"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",

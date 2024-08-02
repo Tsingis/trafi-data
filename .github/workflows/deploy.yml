@@ -5,12 +5,10 @@ on:
       - main
     paths:
       - "src/**"
-      - "config/**"
       - "nginx/**"
       - "package*.json"
       - ".env.*"
       - "Dockerfile"
-      - "index.html"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
 jobs:
