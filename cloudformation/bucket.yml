@@ -107,6 +107,7 @@ Resources:
         DefaultCacheBehavior:
           TargetOriginId: !Sub "${BucketName}-origin"
           ViewerProtocolPolicy: redirect-to-https
+          Compress: true
           AllowedMethods:
             - GET
             - HEAD
