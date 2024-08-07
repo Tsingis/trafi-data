@@ -9,6 +9,7 @@ on:
       - "tests/**"
       - "Dockerfile"
       - ".github/workflows/sonar.yml"
+  workflow_dispatch:
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
