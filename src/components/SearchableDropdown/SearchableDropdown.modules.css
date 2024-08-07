@@ -38,7 +38,6 @@ input {
   border-radius: 4px;
   background: var(--background-color);
   max-height: 300px;
-  overflow-y: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   padding: 0;
@@ -46,8 +45,8 @@ input {
   list-style-type: none;
   display: none;
   overflow-y: scroll;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .dropdown-menu.show {
@@ -55,12 +54,26 @@ input {
 }
 
 .dropdown-menu li {
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  padding: 0;
 }
 
-.dropdown-menu li:hover,
-.dropdown-menu li.active {
+.dropdown-menu button {
+  all: unset; 
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  background: var(--background-color);
+  border: none;
+  font-size: inherit;
+}
+
+.dropdown-menu button:hover,
+.dropdown-menu button.active {
   background-color: #f0f0f0;
+}
+
+.dropdown-menu button:focus {
+  outline: none;
 }

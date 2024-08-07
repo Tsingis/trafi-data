@@ -129,12 +129,20 @@ const SearchableDropdown: React.FC<SearchableDropdownProps> = ({
         <ul className="dropdown-menu show">
           {filteredOptions.length > 0 ? (
             filteredOptions.map((option, index) => (
-              <li
-                key={option.code}
-                onClick={() => handleOptionClick(option)}
-                className={highlightedIndex === index ? "active" : ""}
-              >
-                {option.name}
+              <li key={option.code}>
+                <button
+                  type="button"
+                  onClick={() => handleOptionClick(option)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") {
+                      event.preventDefault()
+                      handleOptionClick(option)
+                    }
+                  }}
+                  className={highlightedIndex === index ? "active" : ""}
+                >
+                  {option.name}
+                </button>
               </li>
             ))
           ) : (

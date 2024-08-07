@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import Chart from "chart.js/auto"
+import Chart, { Chart as ChartJS, ChartConfiguration } from "chart.js/auto"
 import { Count } from "../../types"
 import "./LineChart.modules.css"
 
@@ -23,6 +23,7 @@ const LineChart: React.FC<LineChartProps> = ({
   style,
 }) => {
   const chartRef = useRef<HTMLCanvasElement>(null)
+  const chartInstanceRef = useRef<ChartJS | null>(null) // Ref to store the Chart.js instance
 
   useEffect(() => {
     if (chartRef.current) {
@@ -31,14 +32,14 @@ const LineChart: React.FC<LineChartProps> = ({
         0,
       )
 
-      const chart = new Chart(chartRef.current, {
+      const config: ChartConfiguration<"line", number[]> = {
         type: "line",
         data: {
           labels: Object.keys(data),
           datasets: [
             {
               label: title,
-              data: Object.values(data),
+              data: Object.values(data) as number[], // Ensure data is an array of numbers
               borderColor: "rgba(0, 123, 255, 1)",
               backgroundColor: "rgba(0, 123, 255, 0.6)",
               fill: false,
@@ -96,9 +97,8 @@ const LineChart: React.FC<LineChartProps> = ({
               ticks: {
                 autoSkip: true,
                 callback: function (value: string | number, index: number) {
-                  const chart = this.chart
-                  const labels = chart.data.labels as string[]
-
+                  const labels = chartInstanceRef.current?.data
+                    .labels as string[]
                   if (labels && labels.length > 0) {
                     if (index === 0 && firstXAxisLabelText) {
                       return firstXAxisLabelText
@@ -128,10 +128,12 @@ const LineChart: React.FC<LineChartProps> = ({
             },
           },
         },
-      })
+      }
+
+      chartInstanceRef.current = new Chart(chartRef.current, config)
 
       return () => {
-        chart.destroy()
+        chartInstanceRef.current?.destroy()
       }
     }
   }, [data, title, xAxisText, yAxisText, firstXAxisLabelText])

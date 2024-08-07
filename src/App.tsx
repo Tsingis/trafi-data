@@ -110,17 +110,15 @@ function App() {
 
   return (
     <div>
-      <h1>
-        Registered passenger cars in Finland
-        <span className="data-date">
-          Data from{" "}
-          {date.toLocaleDateString("en-FI", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </span>
-      </h1>
+      <h1 className="title">Registered passenger cars in Finland</h1>
+      <div className="data-date">
+        Data from{" "}
+        {date.toLocaleDateString("en-FI", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </div>
       <div className="search-container">
         <div>Choose municipality:</div>
         <SearchableDropdown
