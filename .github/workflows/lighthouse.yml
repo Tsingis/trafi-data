@@ -1,0 +1,25 @@
+name: lighthouse
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL to audit"
+        required: true
+        default: "https://passenger-cars-data.onrender.com/"
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Audit URLs using Lighthouse
+        id: lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: ${{ inputs.url }}
+          runs: 3
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+      - name: Report
+        run: |
+          LINKS=$(echo '${{ steps.lighthouse.outputs.links }}' | jq -r --arg url "${{ inputs.url }}" '.[$url]')
+          echo "URL: $LINKS"
